@@ -1,0 +1,955 @@
+@import "compass/reset.scss";
+@import "compass/css3";
+//add samsung font
+@font-face {
+  font-family:'SamsungOne-500';
+  src: url('../fonts/SamsungOne-500_gdi.eot');
+  src: url('../fonts/SamsungOne-500_gdi.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SamsungOne-500_gdi.woff') format('woff'),
+  url('../fonts/SamsungOne-500_gdi.ttf') format('truetype'),
+  url('../fonts/SamsungOne-500_gdi.otf') format('opentype'),
+  url('../fonts/SamsungOne-500_gdi.svg#SamsungOne-500') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-2081;
+}
+// project variables
+$textColor: #000000;
+$fontSize: 18px;
+$fontFamily: 'SamsungOne-500';
+$headingColor: #37474f;
+// project mixin
+@mixin scale-rotate ($rotate, $scale) {
+  -o-transform: rotate($rotate) scale($scale);
+  -ms-transform: rotate($rotate) scale($scale);
+  -webkit-transform: rotate($rotate) scale($scale);
+  -moz-transform: rotate($rotate) scale($scale);
+  transform: rotate($rotate) scale($scale);
+}
+@mixin rotate ($rotate) {
+  -ms-transform: rotate($rotate);
+  -webkit-transform: rotate($rotate);
+  -moz-transform: rotate($rotate);
+  transform: rotate($rotate);
+}
+@mixin scale ($scale) {
+  -ms-transform: scale($scale);
+  -webkit-transform: scale($scale);
+  -moz-transform: scale($scale);
+  transform: scale($scale);
+}
+/* webkit optimization */
+body {-webkit-text-size-adjust:100%;}
+input[type=submit],
+input[type=text],
+input[type=password],
+input[type=file],
+textarea{-webkit-appearance:none;}
+textarea,
+input[type=submit],
+input[type=text]{-webkit-border-radius:0;}
+input[type="image"]{
+  padding:0;
+  border:none;
+}
+body {
+  font:$fontSize $fontFamily, Arial, Helvetica, sans-serif;
+  line-height:1.25;
+  margin:0;
+  background:#fff;
+  color:$textColor;
+  min-width: 1280px;
+  width: 100%;
+}
+a {
+  color:$textColor;
+  text-decoration: underline;
+}
+a:hover {
+  text-decoration: none;
+  color: $textColor;
+}
+img {
+  border: none;
+}
+form,
+fieldset {
+  margin:0;
+  padding:0;
+  border-style:none;
+}
+input, textarea, select {
+  font:100% "Lucida Grande", arial, sans-serif;
+  vertical-align:middle;
+  color:#000;
+}
+label {vertical-align:middle;}
+input:focus {
+  outline:none;
+}
+strong {
+  font-weight: bold;
+}
+.hidden {
+  visibility: hidden;
+}
+em {
+  font-style: italic;
+}
+p {
+  margin:0 0 22px;
+}
+h1, h2, p {
+  position: relative;
+  z-index:2;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin:0 auto;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+.content-holder {
+  width: 1024px;
+  margin: 0 auto;
+}
+#nav ul:after,
+.content-holder:after
+.header-top:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+.vertical-aligment-box {
+  display: inline-block;
+  vertical-align: middle;
+}
+.vertical-aligment-el {
+  display: inline-block;
+  vertical-align: middle;
+  height:100%;
+  content: '';
+}
+h1 {
+  color: #000000;
+  font:bold 104px Arial, Helvetica, sans-serif;
+  margin: 0 0 60px;
+  text-align: center;
+}
+h2 {
+  color: #000000;
+  font:bold 85px Arial, Helvetica, sans-serif;
+  margin: 0 0 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.btn {
+  min-width: 285px;
+  height: 46px;
+  line-height: 46px;
+  font-size:$fontSize+2px;
+  display: inline-block;
+  border:2px solid #000;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  z-index:4;
+  background: #fff;
+  &:hover {
+    background: #000;
+    color: #fff;
+  }
+}
+.css-animation-default {
+  @include transition-property(all);
+  @include transition-duration(1.5s);
+  @include transition-timing-function(ease-in);
+}
+#phone01-img {
+  @extend .css-animation-default;
+}
+#phone02-img, #phone03-img, #phone04-img, #phone05-img {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  @extend .css-animation-default;
+  @include transition-duration(1s);
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+#scrolled-phone,
+#top-section-phone,
+#dark-line-box-phone,
+#slider-phone,
+#gear-360-phone,
+#gear-vr-phone,
+#music-phone {
+  z-index: 1;
+  position: absolute;
+  left:432px;
+  top:219px;
+  @include scale-rotate(23deg, 0.8);
+  &.default {
+    top: 219px;
+    @include scale-rotate(23deg, 0.8);
+    @extend .css-animation-default;
+  }
+  &.anim1 {
+    top: 250px;
+    @include scale-rotate(20deg, 0.8);
+    @extend .css-animation-default;
+  }
+  &.anim2 {
+    top: 280px;
+    @include scale-rotate(18deg, 0.8);
+    @extend .css-animation-default;
+  }
+  &.anim2-2 {
+    top: 310px;
+    @include scale-rotate(15deg, 0.8);
+    @extend .css-animation-default;
+  }
+  &.anim3 {
+    left: 430px !important;
+    @extend .css-animation-default;
+    //@include transition-duration(1s);
+  }
+  &.anim4 {
+    top: 1650px;
+    left: 480px;
+    @include scale-rotate(0, 0.99);
+    @extend .css-animation-default;
+  }
+  &.anim5 {
+    top: 625px !important;
+    left: 238px !important;
+    @include scale-rotate(0, 0.99);
+    @extend .css-animation-default;
+  }
+  &.anim6 {
+    top: 700px !important;
+    left: -450px !important;
+    @include scale-rotate(0, 0.99);
+    @extend .css-animation-default;
+  }
+  &.anim7 {
+    top: -70px !important;
+    left: 655px !important;
+    @include scale-rotate(0, 1);
+    @extend .css-animation-default;
+    #phone02-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone01-img {
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width:0;
+    }
+  }
+  &.anim8 {
+    top: 440px !important;
+    left: 655px !important;
+    @include scale-rotate(0, 1);
+    @extend .css-animation-default;
+    #phone02-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone01-img {
+      opacity: 0;
+      visibility: hidden;
+      width:0;
+    }
+  }
+  &.anim9 {
+    top: 750px !important;
+    left: 1400px !important;
+    @include scale-rotate(0, 1);
+    @extend .css-animation-default;
+    #phone02-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone01-img,
+    #phone03-img,
+    #phone04-img
+    #phone05-img {
+      opacity: 0;
+      visibility: hidden;
+      width: 0;
+    }
+  }
+  &.anim10 {
+    top: 4550px;
+    left: 400px;
+    @include scale-rotate(0, 1);
+    @extend .css-animation-default;
+    #phone03-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone01-img,
+    #phone02-img,
+    #phone04-img,
+    #phone05-img {
+      opacity: 0;
+      visibility: visible;
+      width:0;
+    }
+  }
+  &.anim11 {
+    top: 4735px;
+    left: 330px;
+    @include scale-rotate(0, 1);
+    @extend .css-animation-default;
+    #phone04-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone01-img,
+    #phone02-img,
+    #phone03-img,
+    #phone05-img {
+      opacity: 0;
+      visibility: visible;
+      width:0;
+    }
+  }
+  &.anim12 {
+    top: 5300px;
+    left: 280px;
+    @include scale-rotate(5deg, 1);
+    @extend .css-animation-default;
+    z-index: 3;
+    #phone04-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone01-img,
+    #phone02-img,
+    #phone03-img,
+    #phone05-img {
+      opacity: 0;
+      visibility: visible;
+      width:0;
+    }
+  }
+  &.anim13 {
+    //top: 200px !important;
+    //left: 280px !important;
+    @extend .css-animation-default;
+    opacity: 1 !important;
+    visibility: visible !important;
+    z-index: 3;
+    #phone04-img {
+      opacity: 1;
+      visibility: visible;
+      width: auto;
+    }
+    #phone01-img,
+    #phone02-img,
+    #phone03-img,
+    #phone05-img {
+      opacity: 0;
+      visibility: visible;
+      width: 0;
+    }
+  }
+    &.anim14 {
+    top: 380px !important;
+    left: 288px !important;
+    @include scale-rotate(5deg, 1);
+    @extend .css-animation-default;
+      @include transition-duration(1s);
+      opacity: 1 !important;
+      visibility: visible !important;
+    #phone01-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone02-img,
+    #phone03-img,
+    #phone04-img,
+    #phone05-img {
+      opacity: 0;
+      visibility: visible;
+      width:0;
+    }
+  }
+  &.anim15 {
+    top: 555px !important;
+    left: 288px !important;
+    @include scale-rotate(11deg, 1);
+    @extend .css-animation-default;
+    @include transition-duration(1s);
+    opacity: 1 !important;
+    visibility: visible !important;
+    #phone01-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone02-img,
+    #phone03-img,
+    #phone04-img,
+    #phone05-img {
+      opacity: 0;
+      visibility: visible;
+      width:0;
+    }
+  }
+  &.anim16 {
+    top: 460px !important;
+    left: 500px !important;
+    @include scale-rotate(0, 1);
+    @extend .css-animation-default;
+    #phone05-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone01-img,
+    #phone02-img,
+    #phone03-img,
+    #phone04-img {
+      opacity: 0;
+      visibility: visible;
+      width:0;
+    }
+  }
+  &.anim17 {
+    top: 598px !important;
+    left: 500px !important;
+    @include scale-rotate(0, 1);
+    @extend .css-animation-default;
+    #phone05-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone01-img,
+    #phone02-img,
+    #phone03-img,
+    #phone04-img {
+      opacity: 0;
+      visibility: visible;
+      width:0;
+    }
+  }
+  &.anim18 {
+    top: 700px !important;
+    left: 500px !important;
+    @include scale-rotate(0, 1);
+    @extend .css-animation-default;
+    #phone05-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone01-img,
+    #phone02-img,
+    #phone03-img,
+    #phone04-img {
+      opacity: 0;
+      visibility: visible;
+      width:0;
+    }
+  }
+  &.anim19 {
+    top: 7900px;
+    left: 470px;
+    @include scale-rotate(-25deg, 1);
+    @extend .css-animation-default;
+    #phone05-img {
+      opacity: 1;
+      visibility: visible;
+      width:auto;
+    }
+    #phone01-img,
+    #phone02-img,
+    #phone03-img,
+    #phone04-img {
+      opacity: 0;
+      visibility: visible;
+      width:0;
+    }
+  }
+  &.anim20 {
+    top: 8150px;
+    left: 470px;
+    @include scale-rotate(-25deg, 1);
+    @extend .css-animation-default;
+    #phone05-img {
+      opacity: 0;
+      visibility: hidden;
+      width:auto;
+    }
+    #phone01-img,
+    #phone02-img,
+    #phone03-img,
+    #phone04-img {
+      opacity: 0;
+      visibility: visible;
+      width:0;
+    }
+  }
+}
+.img-box {
+  color: #fff;
+}
+.decor-el {
+  background-image: url(../images/sprite.png);
+  display: inline-block;
+  text-indent:-9999px;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  .header-top {
+    position: relative;
+    padding: 23px 40px;
+    height: 26px;
+    width:1200px;
+    margin:0 auto;
+    .logo, .logo-samsung {
+      overflow: hidden;
+      text-indent: -9999px;
+      a {
+        display: block;
+        min-height: 100%;
+      }
+    }
+    .logo {
+      position: absolute;
+      right: 40px;
+      top: 0;
+      background: #fff;
+      @include box-shadow(0 0 5px rgba(0, 0, 0, 0.35));
+      width: 95px;
+      height: 79px;
+      text-align: center;
+      img {
+        display: block;
+        width: 70px;
+        padding:3px 0 0;
+        margin:0 auto;
+      }
+    }
+    .logo-samsung {
+      float: left;
+      img {
+        display: block;
+      }
+      a {
+        color: #000000;
+        text-decoration: none;
+      }
+    }
+  }
+  #nav {
+    height: 66px;
+    line-height: 66px;
+    width: 100%;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 100;
+    ul {
+      text-align: center;
+      font-size: 0;
+      li {
+
+        }
+    }
+  }
+  &.fixed {
+    z-index: 1000;
+    background: #fff;
+  }
+}
+/* #top-section
+----------------------------------------------------------------------------*/
+#top-section {
+  background-image: url(../images/bg-top-section.jpg);
+  height: 789px;
+  position: relative;
+
+}
+/* #desc-top
+----------------------------------------------------------------------------*/
+#desc-top {
+  padding:185px 0 0;
+  width: 1230px;
+  height: 1190px;
+  font-size: 0;
+  @extend .vertical-aligment-box;
+  h1 img {
+    display: inline-block;
+    margin:0 0 30px;
+  }
+  .content-holder {
+    height: 434px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size:$fontSize;
+  }
+  &:after {
+    @extend .vertical-aligment-el;
+  }
+}
+/* #dark-line-box
+----------------------------------------------------------------------------*/
+#dark-line-box {
+  .line-holder {
+    height: 476px;
+    background: #000;
+    margin:0 0 205px;
+    position: relative;
+    #dark-line-box-phone {
+      top: -131px;
+      left: -400px;
+      @include scale-rotate(0, 0.99);
+      @extend .css-animation-default;
+      //@include transition-duration(1.4s);
+    }
+    .anim-line {
+      background-color: #0099f3; // Old browsers
+      @include filter-gradient(#0099f3, #0038a8, vertical); // IE6-9
+      @include background-image(linear-gradient(top, #0099f3 0%,#006acf 49%,#0038a8 100%));
+      width:561px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -700px;
+      @extend .css-animation-default;
+      //@include transition-duration(1.8s);
+      &.anim-line-active {
+        left: 0;
+      }
+    }
+    .anim-tel {
+      top: -110px;
+      right: -400px;
+      position: absolute;
+      @include scale(0.88);
+      @extend .css-animation-default;
+      &.anim-tel-active {
+        right: 252px;
+        &.left-m {
+          right: 370px;
+        }
+      }
+    }
+  }
+}
+/* #slider-section
+----------------------------------------------------------------------------*/
+#slider-section {
+  padding:150px 0 100px;
+  position: relative;
+  width: 1280px;
+  height: 1270px;
+  #slider {
+    height: 750px;
+    margin:0 0 130px;
+  }
+  #slider-phone {
+    @extend .css-animation-default;
+    left: -400px;
+    top: 100px;
+  }
+  #smart-clock {
+    background: url(../images/sprite.png) -529px -371px;
+    position: absolute;
+    top:-350px;
+    right: -700px;
+    opacity: 0.6;
+    width: 621px;
+    height: 435px;
+    @extend .css-animation-default;
+    z-index: 2;
+    &.smart-clock-active {
+      right: -240px !important;
+    }
+    &.smart-clock-pos1 {
+      opacity: 1 !important;
+      top: 820px !important;
+      right: 240px !important;
+    }
+    &.smart-clock-pos2 {
+      opacity: 1 !important;
+      top: 1100px !important;
+      right: -650px !important;
+    }
+    &.smart-clock-pos3 {
+      opacity: 1 !important;
+      top: 1100px !important;
+      right: -700px !important;
+    }
+  }
+}
+// slider styles
+@import "swiper";
+.swiper-container {
+  width: 100%;
+  height: 750px;
+  background: #fff;
+  position: relative;
+  z-index:3;
+  opacity: 0;
+  @extend .css-animation-default;
+  &.visible-swiper {
+    opacity: 1;
+  }
+  .swiper-slide img {
+    max-height: 750px;
+  }
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin:0 25px !important;
+  }
+  .swiper-pagination-bullet-active {
+    background: #808082;
+  }
+  .swiper-button-prev, .swiper-button-next {
+    background-image: url(../images/sprite.png);
+    width: 32px;
+    height: 65px;
+    -webkit-background-size:auto;
+    -ms-background-size:auto;
+    background-size:auto;
+  }
+  .swiper-button-prev {
+    background-position: -1024px 0;
+  }
+  .swiper-button-next {
+    background-position: -1116px 0;
+  }
+}
+/* #gear-360-section
+----------------------------------------------------------------------------*/
+#gear-360-section {
+  padding:100px 0 0;
+  position: relative;
+  height:1290px;
+  .img-box {
+    background-image: url(../images/bg-gear-360.jpg);
+    height: 721px;
+    h1 {
+      color: #fff;
+      padding:50px 0 21px;
+      margin: 0;
+    }
+  }
+  #gear-360-phone {
+    @extend .css-animation-default;
+    @include scale-rotate(0, 1);
+    left: 1400px;
+    top: -120px;
+  }
+  #phone-view02,
+  #phone-view03 {
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    margin:0 0 0 -256px;
+    opacity: 0;
+    visibility: hidden;
+    @extend .css-animation-default;
+    &.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  #phone-view03 {
+    margin:0 0 0 -340px;
+    bottom: -60px;
+  }
+  #gear-360 {
+    position: absolute;
+    background: url(../images/sprite.png) 0 -441px;
+    width: 460px;
+    height: 366px;
+    top: 0;
+    left:-500px;
+    @extend .css-animation-default;
+    &.gear-360-pos1 {
+      top: 155px !important;
+      left: 21px !important;
+    }
+    &.gear-360-pos2 {
+      top: 730px !important;
+      left: 346px !important;
+      z-index: 2;
+    }
+    &.gear-360-pos3 {
+      top: 920px !important;
+      left: -680px !important;
+      z-index: 2;
+    }
+    &.gear-360-pos4 {
+      top: 960px !important;
+      left: -680px !important;
+      z-index: 2;
+    }
+    &.gear-360-pos5 {
+      top: 960px !important;
+      left: -700px !important;
+      z-index: 2;
+    }
+  }
+}
+/* #gear-vr-section
+----------------------------------------------------------------------------*/
+#gear-vr-section {
+  padding:80px 0 0;
+  height: 1183px;
+  position: relative;
+  .content-holder {
+    padding-top: 40px;
+  }
+  .img-box {
+    background-image: url(../images/bg-gear-vr.jpg);
+    height: 687px;
+    margin:0 0 20px;
+    position: relative;
+  }
+  .link-photo-example {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin:10px 0 35px;
+    display: inline-block;
+  }
+  .gear-vr {
+    position: absolute;
+    width: 763px;
+    height: 364px;
+    left:50%;
+    bottom: 15px;
+    margin:0 0 0 -381.5px;
+    z-index: 5;
+  }
+}
+#gear-vr-phone {
+  position: absolute;
+  left:288px;
+  top: 349px;
+  @extend .css-animation-default;
+  opacity: 0;
+  visibility: hidden;
+  @include scale-rotate(0, 1);
+}
+/* #music-section
+----------------------------------------------------------------------------*/
+#music-section {
+  padding:240px 0 0;
+  height: 1150px;
+  position: relative;
+  overflow: hidden;
+  .content-holder {
+    position: relative;
+    z-index:6;
+  }
+  .level-text {
+    position: relative;
+    background-position: 0 -370px;
+    width: 509px;
+    height: 69px;
+    margin:0 0 54px;
+    z-index: 5;
+  }
+  #headphones {
+    position: absolute;
+    width: 752px;
+    height: 825px;
+    background: url(../images/sprite.png) 0 -856px;
+    left:50%;
+    top: -1100px;
+    margin:0 0 0 -376px;
+    @extend .css-animation-default;
+    &.headphones-pos1 {
+      top: 0 !important;
+    }
+    &.headphones-pos2 {
+      top: 455px !important;
+    }
+  }
+  .headphones-part {
+    position: absolute;
+    width: 330px;
+    height: 672px;
+    right: 0;
+    bottom: 0;
+    background: url(../images/sprite.png) -820px -856px;
+    z-index: 3;
+  }
+}
+#music-phone {
+  position: absolute;
+  @include scale-rotate(0, 1);
+  left: 500px;
+  top: 460px;
+  @extend .css-animation-default;
+}
+/* #charger-section
+-----------------------------------------------------------------------------*/
+#charger-section {
+  height: 940px;
+  padding:70px 0 250px;
+  position: relative;
+  .charger {
+    position: absolute;
+    left:50%;
+    bottom: 129px;
+    z-index: 1;
+    width: 525px;
+    height: 505px;
+    margin:0 0 0 -217px;
+    background-position: 0 -1695px;
+  }
+  .charger-final {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    width: 621px;
+    height: 688px;
+    background-position: -528px -1695px;
+    z-index: 2;
+    @extend .css-animation-default;
+    @include transition-duration(1.2s);
+    &.charger-final-active {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .btn-holder {
+    padding:25px 0 0;
+  }
+}

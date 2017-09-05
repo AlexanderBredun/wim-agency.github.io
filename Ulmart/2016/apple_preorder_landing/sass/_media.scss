@@ -1,0 +1,10 @@
+@media only screen and (max-width: 633px), only screen and (max-device-width: 633px) {
+  .preview-box ul li,
+  .form-col-holder .form-col {
+    padding: 0 !important;
+    width:100%;
+  }
+  .preview-box ul li .img-holder {
+    text-align: center !important;
+  }
+}

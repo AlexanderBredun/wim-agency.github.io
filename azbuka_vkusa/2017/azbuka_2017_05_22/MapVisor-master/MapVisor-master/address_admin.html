@@ -1,0 +1,419 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MapViser</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="">
+  <link href="css/style.css" media="screen, projection" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        #footer {filter: none;}
+    </style>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper admin-wrapper">
+        <header id="header">
+            <div class="logo-holder">
+                <h1 class="logo"><a href="#"><img src="images/logo.png" alt=""></a></h1>
+            </div><!--.logo-holder-->
+            <nav id="nav">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                </ul>
+            </nav><!--#nav-->
+            <div class="header-form">
+                <form action="#">
+                    <fieldset>
+                        <input class="search" type="submit" value="">
+                        <span class="icon-Icon-48"></span>
+                        <input type="text">
+                    </fieldset>
+                </form>
+                <ul class="notifications-list">
+                    <li><a href="#"><span class="icon-ic_person_black_24px"></span></a></li>
+                    <li><a href="#"><span class="icon-ic_notifications_black_24px2"></span></a></li>
+                    <li><a href="#"><span class="icon-ic_email_black_24px2"></span></a></li>
+                </ul>
+                <ul class="user-log-list">
+                    <li>
+                        <a class="user-photo" href="#">
+                            <img src="images/img-small02.jpg" alt="">
+                            <span>Smile clinic Idd</span>
+                        </a>
+                    </li>
+                    <li><a href="#"><span class="icon-ic_input_black_24px"></span></a></li>
+                </ul>
+            </div><!--.header-form-->
+        </header><!--#header-->
+
+        <main class="content admin-content">
+            <nav class="content-nav">
+                <div class="w1170">
+                    <ul>
+                        <li>
+                            <a href="#"><span class="icon-ic_home_black_24px"></span></a>
+                        </li>
+                        <li>
+                            My MV FacePage / location
+                        </li>
+                    </ul>
+                </div>
+            </nav><!--.content-nav-->
+            <div class="admin-content-holder">
+                <input type="checkbox" class="nav-toggle" id="nav-toggle-aside">
+                <em class="nav-toggle-btn">
+                    <span> </span><span> </span><span> </span>
+                </em>
+                <nav class="aside-nav">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span class="icon-shield2">
+                                    <span class="path1"></span><span class="path2"></span><span class="path3"></span><span class="path4"></span><span class="path5"></span>
+                                </span> <em>Silver <br>membership</em>
+                            </a>
+                        </li>
+                        <li class="active">
+                            <a href="#"><span class="icon-ic_business_center_black_24px2"></span> <em>Business name</em></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="icon-target"></span> <em>Marketing targets</em></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="icon-ic_location_on_black_24px"></span> <em>Location</em></a>
+                        </li>
+                        <li class="no-active">
+                            <a href="#"><span class="icon-ic_stars_black_24px"></span> <em>Member services</em></a>
+                        </li>
+                        <li class="no-active">
+                            <a href="#"><span class="icon-statistic"></span> <em>Statistics</em></a>
+                        </li>
+                        <li class="no-active">
+                            <a href="#"><span class="icon-baks"></span> <em>Direct pay</em></a>
+                        </li>
+                        <li class="no-active">
+                            <a href="#"><span class="icon-statistic"></span> <em>Direct connect</em></a>
+                        </li>
+                        <li class="no-active">
+                            <a href="#"><span class="icon-ic_today_black_24px"></span> <em>Manage shedule</em></a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="icon-ic_vpn_key_black_24px2"></span> <em>Per Inf setup</em></a>
+                        </li>
+                    </ul>
+                </nav><!--.aside-nav-->
+                <div class="w1170 content-holder">
+                    <article class="content-box location-box">
+                        <h3 class="heading mb40">
+                            <a href="#">Location ZIp 3355</a> <a href="#"><span class="icon-ifc_add_circle_black_24px2"></span></a> <a class="fr" href="#"><span class="icon-ic_keyboard_arrow_up_black_24px2"></span></a>
+                        </h3>
+                        <div class="attent-block maxw1000">
+                            <span class="icon-attent">
+                                <span class="path1"></span><span class="path2"></span>
+                            </span>
+                            <span>You can personalize every card you select to show a unique quality that you offer.  Personalization allows you to effectively compete and target your clients effectively!</span>
+                        </div><!--.attent-block-->
+
+                        <form action="#">
+                            <fieldset>
+                                <div class="address-box mb30 maxw1000">
+                                    <div class="address-form">
+                                        <h2>Address</h2>
+                                        <div class="form-row pl35 mb30 row-zip">
+                                            <label class="label-icon" for="street"><span class="icon-ic_location_on_black_24px"></span></label>
+                                            <input type="text" id="zip" placeholder="ZIP">
+                                            <div class="check-holder">
+                                                <input type="checkbox" class="check-anim" id="visible-check" />
+                                                <label for="visible-check">Visible<span class="red">*</span> Golden subscription</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row pl35 mb30 maxw300">
+                                            <input type="text" id="city" placeholder="City">
+                                        </div>
+                                        <div class="form-row pl35 mb20 maxw300">
+                                            <input type="text" id="street" placeholder="Street">
+                                        </div>
+                                        <div class="form-row pl35 mb20 maxw300">
+                                            <label class="select-custom">
+                                                <select id="location">
+                                                    <option value="Alabama">Alabama</option>
+                                                    <option value="Arizona">Arizona</option>
+                                                    <option value="Arkansas">Arkansas</option>
+                                                    <option value="Colorado">Colorado</option>
+                                                </select>
+                                            </label>
+                                        </div>
+                                        <div class="form-row pl30 mb12">
+                                            <label class="select-custom w190 fl mr10 mb20">
+                                                <select>
+                                                    <option value="Area of service">Area of service</option>
+                                                    <option value="value 1">value 1</option>
+                                                    <option value="value 2">value 2</option>
+                                                    <option value="value 3">value 3</option>
+                                                </select>
+                                            </label>
+                                            <div class="radio-holder">
+                                                <div class="radio-row mb12">
+                                                    <input type="radio" value="Small" id="area-small" name="area-size">
+                                                    <label for="area-small">Small (5 milek radius)</label>
+                                                </div>
+                                                <div class="radio-row mb12">
+                                                    <input checked="checked" type="radio" value="Medium" id="area-medium" name="area-size">
+                                                    <label for="area-medium">Medium (10 milek radius)</label>
+                                                </div>
+                                                <div class="radio-row mb12">
+                                                    <input type="radio" value="Large" id="area-large" name="area-size">
+                                                    <label for="area-large">Large (30 milek radius)</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="map">
+                                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d48384.10701484486!2d-74.10229838786408!3d40.717869258687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250d225bfafdd%3A0x249f013a2cd25d9!2z0JTQttC10YDRgdC4LdCh0LjRgtC4LCDQndGM0Y4t0JTQttC10YDRgdC4LCDQodCo0JA!5e0!3m2!1sru!2sua!4v1488734338676" width="600" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+                                    </div>
+                                </div><!--.address-box-->
+                                <div class="contact-box">
+                                    <div class="maxw1000 column-holder">
+                                        <div class="col-50">
+                                            <h2>Contact</h2>
+                                            <div class="form-row pl35 mb30 maxw300">
+                                                <label class="label-icon" for="phone"><span class="icon-ic_phone_black_24px2"></span></label>
+                                                <input type="text" id="phone" placeholder="Phone">
+                                            </div>
+                                            <div class="form-row pl35 mb30 maxw300">
+                                                <label class="label-icon" for="email"><span class="icon-ic_email_black_24px"></span></label>
+                                                <input type="text" id="email" placeholder="Email">
+                                            </div>
+                                            <div class="form-row pl35 mb30 maxw300">
+                                                <label class="label-icon" for="fax"><span class="icon-print"></span></label>
+                                                <input type="text" id="fax" placeholder="Fax">
+                                            </div>
+                                            <div class="form-row pl35 mb30 maxw300">
+                                                <label class="label-icon" for="website"><span class="icon-ic_public_black_24px2"></span></label>
+                                                <input type="text" id="website" placeholder="Website">
+                                            </div>
+                                        </div>
+                                        <div class="col-50 hours-box">
+                                            <h2>Hours</h2>
+                                            <ul>
+                                                <li>
+                                                    <strong>Mon</strong> 9:00 am &ndash; 5:00
+                                                </li>
+                                                <li>
+                                                    <strong>Tue</strong> 9:00 am &ndash; 5:00
+                                                </li>
+                                                <li>
+                                                    <strong>Wed</strong> 9:00 am &ndash; 5:00
+                                                </li>
+                                                <li>
+                                                    <strong>Thu</strong> 9:00 am &ndash; 5:00
+                                                </li>
+                                                <li>
+                                                    <strong>Fri</strong> 9:00 am &ndash; 5:00
+                                                </li>
+                                            </ul>
+                                            <div class="form-row">
+                                                <label class="select-custom fl">
+                                                    <select id="work-day">
+                                                        <option value="Mon">Mon</option>
+                                                        <option value="Tue">Tue</option>
+                                                        <option value="Wed">Wed</option>
+                                                        <option value="Thu">Thu</option>
+                                                        <option value="Fri">Fri</option>
+                                                    </select>
+                                                </label>
+                                                <label class="select-custom fl">
+                                                    <select id="time-from">
+                                                        <option value="9:00 am">9:00 am</option>
+                                                        <option value="10:00 am">10:00 am</option>
+                                                        <option value="11:00 am">11:00 am</option>
+                                                        <option value="12:00 am">12:00 am</option>
+                                                    </select>
+                                                </label>
+                                                <label class="select-custom fl">
+                                                    <select id="time-to">
+                                                        <option value="5:00 pm">5:00 pm</option>
+                                                        <option value="6:00 pm">6:00 pm</option>
+                                                        <option value="7:00 pm">7:00 pm</option>
+                                                        <option value="8:00 pm">8:00 pm</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!--.contact-box-->
+                            </fieldset>
+                        </form>
+                    </article><!--.content-box-->
+
+                    <div class="attent-block maxw1000">
+                        <span class="icon-attent">
+                            <span class="path1"></span><span class="path2"></span>
+                        </span>
+                        <span>You can personalize every card you select to show a unique quality that you offer.  Personalization allows you to effectively compete and target your clients effectively!</span>
+                    </div><!--.attent-block-->
+
+                    <ul class="articles-list">
+                        <li>
+                            <article class="content-box">
+                                <h3 class="heading">
+                                    <a href="#">Mouthguards</a> <a class="fr" href="#"><span class="icon-ic_close_black_24px_1_2"></span></a> <a class="fr" href="#"><span class="icon-ic_settings_black_24px2"></span></a>
+                                </h3>
+                                <div class="text-holder">
+                                    <div class="img-box">
+                                        <a href="#"><img src="images/img-article.jpg" alt=""></a>
+                                        <span class="article-text">Lorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum,... tald..i...aineLorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum, tale dicant inermis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.rmis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.</span>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <a href="#" class="link-green"><span class="icon-ic_rate_review_black_24px"></span></a>
+                                </footer>
+                            </article><!--.content-box-->
+                        </li>
+                        <li>
+                            <article class="content-box">
+                                <h3 class="heading">
+                                    <a href="#">Dental Veterinarian </a> <a class="fr" href="#"><span class="icon-ic_close_black_24px_1_2"></span></a> <a class="fr" href="#"><span class="icon-ic_settings_black_24px2"></span></a>
+                                </h3>
+                                <div class="text-holder">
+                                    <div class="img-box">
+                                        <a href="#"><img src="images/img-article.jpg" alt=""></a>
+                                        <span class="article-text">Lorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum,... tald..i...aineLorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum, tale dicant inermis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.rmis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.</span>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <a href="#" class="link-green"><span class="icon-ic_rate_review_black_24px"></span></a>
+                                </footer>
+                            </article><!--.content-box-->
+                        </li>
+                        <li>
+                            <article class="content-box">
+                                <h3 class="heading">
+                                    <a href="#">Dental Veterinarian </a> <a class="fr" href="#"><span class="icon-ic_close_black_24px_1_2"></span></a> <a class="fr" href="#"><span class="icon-ic_settings_black_24px2"></span></a>
+                                </h3>
+                                <div class="text-holder">
+                                    <div class="img-box">
+                                        <a href="#"><img src="images/img-article.jpg" alt=""></a>
+                                        <span class="article-text">Lorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum,... tald..i...aineLorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum, tale dicant inermis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.rmis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.</span>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <a href="#" class="link-green"><span class="icon-ic_rate_review_black_24px"></span></a>
+                                </footer>
+                            </article><!--.content-box-->
+                        </li>
+                        <li>
+                            <article class="content-box">
+                                <h3 class="heading">
+                                    <a href="#">Mouthguards</a> <a class="fr" href="#"><span class="icon-ic_close_black_24px_1_2"></span></a> <a class="fr" href="#"><span class="icon-ic_settings_black_24px2"></span></a>
+                                </h3>
+                                <div class="text-holder">
+                                    <div class="img-box">
+                                        <a href="#"><img src="images/img-article.jpg" alt=""></a>
+                                        <span class="article-text">Lorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum,... tald..i...aineLorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum, tale dicant inermis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.rmis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.</span>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <a href="#" class="link-green"><span class="icon-ic_rate_review_black_24px"></span></a>
+                                </footer>
+                            </article><!--.content-box-->
+                        </li>
+                        <li>
+                            <article class="content-box">
+                                <h3 class="heading">
+                                    <a href="#">Dental Veterinarian </a> <a class="fr" href="#"><span class="icon-ic_close_black_24px_1_2"></span></a> <a class="fr" href="#"><span class="icon-ic_settings_black_24px2"></span></a>
+                                </h3>
+                                <div class="text-holder">
+                                    <div class="img-box">
+                                        <a href="#"><img src="images/img-article.jpg" alt=""></a>
+                                        <span class="article-text">Lorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum,... tald..i...aineLorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum, tale dicant inermis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.rmis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.</span>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <a href="#" class="link-green"><span class="icon-ic_rate_review_black_24px"></span></a>
+                                </footer>
+                            </article><!--.content-box-->
+                        </li>
+                        <li>
+                            <article class="content-box">
+                                <h3 class="heading">
+                                    <a href="#">Dental Veterinarian </a> <a class="fr" href="#"><span class="icon-ic_close_black_24px_1_2"></span></a> <a class="fr" href="#"><span class="icon-ic_settings_black_24px2"></span></a>
+                                </h3>
+                                <div class="text-holder">
+                                    <div class="img-box">
+                                        <a href="#"><img src="images/img-article.jpg" alt=""></a>
+                                        <span class="article-text">Lorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum,... tald..i...aineLorem ipsum dolor sit amet, no paulo aliquando similique eam, duo movet putant scripta an. Id sea aliquid phaedrum, tale dicant inermis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.rmis te mel. Te congue diceret duo, mei solum verterem antiopam te, vim at paulo graeci argumentum. An sed illud percipit qualisque, summo audire tincidunt mea cu.</span>
+                                    </div>
+                                </div>
+                                <footer>
+                                    <a href="#" class="link-green"><span class="icon-ic_rate_review_black_24px"></span></a>
+                                </footer>
+                            </article><!--.content-box-->
+                        </li>
+                    </ul>
+                    <div class="buttons-nav">
+                        <ul>
+                            <li>
+                                <a class="link-prev" href="#"><span class="icon-ic_keyboard_arrow_right_black_24px"></span></a>
+                            </li>
+                            <li>
+                                <a class="link-next" href="#"><span class="icon-ic_keyboard_arrow_right_black_24px"></span></a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btn-save">Save</a>
+                    </div><!--.buttons-nav-->
+                </div>
+
+
+            </div><!--.admin-content-->
+
+
+        </main><!--#content -->
+        <a href="#" class="arrow-up"><span class="icon-ic_keyboard_arrow_up_black_24px"></span></a>
+    </div><!-- .wrapper -->
+
+    <footer id="footer">
+        <strong class="logo"><a href="#"><img src="images/logo-bottom.png" alt=""></a></strong>
+        <ul class="social-network-list">
+            <li>
+                <a href="#"><span class="icon-facebook-f"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-twitter"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-linkedin"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-google-plus"></span></a>
+            </li>
+        </ul><!--.social-network-list-->
+        <nav id="footer-nav">
+            <ul>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Profile Plans</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Contact MapViser</a></li>
+            </ul>
+        </nav><!--#footer-nav-->
+    </footer><!-- .footer -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.angular.js"></script>
+    <script src="js/jcf.select.js"></script>
+    <script src="js/jcf.scrollable.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

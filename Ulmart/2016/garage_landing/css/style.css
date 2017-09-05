@@ -1,0 +1,408 @@
+@charset "UTF-8";
+/* import compass reset */
+@import "https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* import compass variables for css3 */
+/* import fonts */
+/* s╤Бss variables */
+/* webkit optimization */
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+input[type=submit],
+input[type=text],
+input[type=password],
+input[type=file],
+textarea {
+  -webkit-appearance: none;
+}
+
+textarea,
+input[type=submit],
+input[type=text] {
+  -webkit-border-radius: 0;
+}
+
+input[type="image"] {
+  padding: 0;
+  border: none;
+}
+
+.main {
+  height: auto !important;
+  min-height: 100%;
+}
+
+body {
+  font: 11px "Roboto", Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  margin: 0;
+  background: #fff;
+  color: #000;
+  min-width: 600px;
+}
+
+a {
+  color: #f15322;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  border: none;
+  max-width: 100%;
+}
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+input, textarea, select {
+  font: 100% "Lucida Grande", arial, sans-serif;
+  vertical-align: middle;
+  color: #000;
+}
+
+label {
+  vertical-align: middle;
+}
+
+input:focus {
+  outline: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+input[type="text"]:focus, input[type="text"]:active, input[type="email"]:focus, input[type="email"]:active, textarea:focus, textarea:active {
+  -moz-box-shadow: inset 0 0 8px rgba(113, 117, 121, 0.7);
+  -webkit-box-shadow: inset 0 0 8px rgba(113, 117, 121, 0.7);
+  box-shadow: inset 0 0 8px rgba(113, 117, 121, 0.7);
+}
+
+input,
+textarea,
+input[type="text"]:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+img.full-width {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.wrapper {
+  width: 600px;
+  min-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrapper:after,
+.holder:after,
+.row:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+h1 {
+  font: 400 29px 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0 0 12px;
+}
+h1.logo {
+  color: #fff;
+}
+
+h2 {
+  font: 400 18px 'Roboto', Arial, Helvetica, sans-serif;
+  margin: 0 0 10px;
+  text-align: center;
+}
+
+.text-mark {
+  color: #f15322;
+}
+
+.btn {
+  background: #f15322;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  font-size: 12px;
+}
+.btn:hover {
+  background: #d03f12;
+  text-decoration: none;
+}
+
+p {
+  margin: 0 0 8px;
+}
+
+.gray {
+  color: #848484;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.small-text {
+  font-size: 9.4px;
+}
+
+#header {
+  color: #fff;
+  position: relative;
+}
+#header .logo {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+  text-transform: uppercase;
+}
+#header .logo span {
+  display: inline-block;
+  background: #f15322;
+  padding: 0 12px;
+}
+#header #nav {
+  font-size: 10px;
+}
+#header #nav li {
+  position: absolute;
+  z-index: 1;
+}
+#header #nav li.filters {
+  top: 112px;
+  left: 43px;
+}
+#header #nav li.svechi {
+  top: 144px;
+  left: 50px;
+}
+#header #nav li.amortizatory {
+  top: 193px;
+  left: 6px;
+}
+#header #nav li.stekloochistiteli {
+  top: 75px;
+  right: 31px;
+  text-align: right;
+}
+#header #nav li.auto-light {
+  top: 133px;
+  right: 22px;
+  text-align: right;
+}
+#header #nav li.diski {
+  top: 238px;
+  right: 59px;
+  text-align: right;
+}
+#header #nav li.shiny {
+  top: 240px;
+  right: 294px;
+  text-align: right;
+}
+#header #nav li img, #header #nav li span {
+  display: inline-block;
+  vertical-align: middle;
+}
+#header #nav li img {
+  margin: 0 7px;
+}
+#header #nav a {
+  color: #fff;
+  text-decoration: none;
+}
+#header #nav a:hover {
+  text-decoration: none;
+}
+#header #nav a:hover span {
+  text-decoration: underline;
+}
+
+.novetly-section {
+  background: #f15322;
+  color: #fff;
+  padding: 10px 0;
+}
+.novetly-section h2 {
+  color: #fff;
+}
+.novetly-section ul a {
+  color: #fff;
+}
+.novetly-section ul a:hover {
+  text-decoration: none;
+}
+.novetly-section ul a:hover span {
+  text-decoration: underline;
+}
+
+ul.ico-list {
+  font-size: 0;
+  text-align: left;
+}
+ul.ico-list li {
+  margin: 0 25px 10px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 11px;
+  text-align: left;
+}
+ul.ico-list li span, ul.ico-list li img {
+  display: inline-block;
+  vertical-align: middle;
+}
+ul.ico-list li img {
+  margin: 0 15px 0 0;
+}
+
+.sale-section {
+  padding: 19px 45px;
+  text-align: left;
+}
+.sale-section h2 {
+  margin: 0;
+  text-align: left;
+  font-weight: 500;
+}
+.sale-section ul {
+  padding: 15px 0 0;
+  overflow: hidden;
+}
+.sale-section ul li {
+  width: 50%;
+  float: right;
+  text-align: right;
+}
+.sale-section ul li:first-child {
+  float: left;
+  text-align: left;
+}
+.sale-section ul li span, .sale-section ul li em {
+  display: inline-block;
+  vertical-align: middle;
+}
+.sale-section ul li em {
+  background: #848484;
+  display: inline-block;
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 0 0 5px;
+}
+
+.details-box {
+  text-align: center;
+  margin: 0 0 18px;
+}
+.details-box .holder {
+  background: #000;
+  height: 40px;
+  line-height: 40px;
+  font-size: 13.5px;
+  margin: 0 0 3px;
+}
+.details-box .holder a {
+  color: #fff;
+  text-decoration: underline;
+}
+.details-box .holder a:hover {
+  text-decoration: none;
+}
+
+.fast-section {
+  padding: 10px 0;
+}
+
+#footer {
+  background: #f1f1f1;
+  padding: 12px 0 0;
+}
+#footer h2 {
+  margin: 0;
+  padding: 0 20px;
+}

@@ -1,0 +1,212 @@
+header, footer, article, section, hgroup, nav, figure, figcaption, aside {
+	display: block;
+}
+@font-face {
+    font-family: 'proxima_nova_ltlight';
+    src: url('../fonts/proximanova-light-webfont.eot');
+    src: url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximanova-light-webfont.woff') format('woff'),
+         url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+         url('../fonts/proximanova-light-webfont.svg#proxima_nova_ltlight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+html,
+body {height:100%;}
+body {
+	margin:0;
+	background:#fff;
+	font:11px 'proxima_nova_ltlight', Arial, Helvetica, sans-serif;
+	line-height:1.3;
+	color:#000;
+	min-width:940px;
+}
+img {border-style:none;}
+a {
+	text-decoration:underline;
+	color:#000;
+}
+a:hover {text-decoration:none;}
+form, 
+fieldset {
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+.wrapper {
+	position: relative;
+	width:100%;
+	min-height:100%;
+	height:auto !important;
+}
+#header {
+	padding:13px 0;
+	overflow:hidden;
+}
+.logo {
+	float:left;
+	overflow:hidden;
+	background:url(../images/bg-logo.gif) no-repeat;
+	height:28px;
+	width:112px;
+	text-indent:-9999px;
+}
+.logo a {
+	outline:none;
+	display:block;
+	height:100%;
+}
+#nav {
+	float:right;
+	text-transform:uppercase;
+	font-size:18px;
+	line-height:28px;
+}
+#nav ul {
+	padding:0;	margin:0;	list-style:none;
+}
+#nav ul li {
+	float:left;
+	margin:0 0 0 70px;
+}
+#nav ul a {
+	color:#010206;
+	text-decoration:none;
+}
+#nav ul a:hover {text-decoration:underline;}
+#main {
+	padding:0 0 70px;
+	position:relative;
+}
+.promo-box {
+	background:url(../images/wide-bg.jpg) repeat-x 50% 0;
+	position:relative;
+	height:402px;
+}
+.w940-holder {
+	position:relative;
+	width:940px;
+	margin:0 auto;
+	overflow:hidden;
+}
+.promo-box h1 {
+	color:#fff;
+	font:36px 'proxima_nova_ltlight', Arial, Helvetica, sans-serif;
+	margin:0 0 15px;
+	text-transform:uppercase;
+}
+.promo-box a {
+	/*
+background:#9b58b5;
+	height:35px;
+	line-height:35px;
+	color:#fff;
+	behavior:url(css/PIE.htc);
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	text-transform:uppercase;
+	text-decoration:none;
+	text-align:center;
+	font-size:12px;
+*/
+	
+	display:inline-block;
+	background:url(../images/more-btn.png) no-repeat;
+	width:209px;
+	height:35px;
+	text-indent:-9999px;
+}
+.promo-list {
+	padding:45px 0 60px;	margin:0;	list-style:none;
+	text-align:center;
+	font:11px Tahoma, Arial, sans-serif;
+	width:1000px;
+}
+.promo-list>li {
+	display:inline-block;
+	vertical-align:top;
+	margin:0 90px;
+	min-height:316px;
+	width:142px;
+	text-align:left;
+	position:relative;
+	padding:0 0 20px;
+	line-height:18px;
+}
+.promo-list>li>img {
+	display:block;
+	margin:0 auto 20px;
+}
+.promo-list h2 {
+	font-weight:normal;
+	margin:0 0 14px;
+	text-align:center;
+	font:21px 'proxima_nova_ltlight', Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+}
+.promo-list p {
+	margin:0 0 11px;
+	font-weight:bold;
+}
+.promo-list>li>a {
+	position:absolute;
+	bottom:0;
+	left:0;
+	line-height:20px;
+	font-weight:bold;
+}
+#main .promo-box .w940-holder {
+	padding:195px 0 0;
+}
+.promo-list-holder {
+	width:940px;
+	overflow:hidden;
+	margin:0 auto;
+	padding:0 60px 0 0;
+}
+.promo-list a {text-decoration:none;}
+.promo-list a:hover {text-decoration:underline;}
+.promo-list>li>a {text-decoration:underline;}
+.promo-list>li>a:hover {text-decoration:none;}
+.promo-list-holder.add-holder {
+	padding:0;
+}
+.promo-list-holder.add-holder p {font-weight:normal;}
+.add-holder .promo-list,
+.add-holder .promo-list>li {
+	display:block;
+	width:940px;
+	margin:0;
+}
+.add-holder .promo-list {
+	padding-bottom:45px;
+	font-size:12px;
+	line-height:11px;
+}
+.add-holder .mobile-fix {
+	line-height:24px;
+	display:inline;
+}
+.promo-big-text {
+	font-size:16px;
+	display:block;
+	text-align:center;
+}
+#footer {
+    background:#02020e;
+    height:15px;
+	padding:28px 0 27px;
+    margin: -70px auto 0;
+    min-width: 940px;
+    position: relative;
+	color:#797777;
+	line-height:15px;
+	font-family:Tahoma, Arial, sans-serif;
+}
+#footer>span {
+	display:block;
+	width:940px;
+	margin:0 auto;
+}
+#footer>span span { font-family:Arial, Helvetica, sans-serif;}

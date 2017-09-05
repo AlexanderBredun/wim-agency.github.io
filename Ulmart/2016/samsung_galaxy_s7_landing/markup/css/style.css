@@ -1,0 +1,2372 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: 'SamsungOne-500';
+  src: url("../fonts/SamsungOne-500_gdi.eot");
+  src: url("../fonts/SamsungOne-500_gdi.eot?#iefix") format("embedded-opentype"), url("../fonts/SamsungOne-500_gdi.woff") format("woff"), url("../fonts/SamsungOne-500_gdi.ttf") format("truetype"), url("../fonts/SamsungOne-500_gdi.otf") format("opentype"), url("../fonts/SamsungOne-500_gdi.svg#SamsungOne-500") format("svg");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+000D-2081;
+}
+/* webkit optimization */
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+input[type=submit],
+input[type=text],
+input[type=password],
+input[type=file],
+textarea {
+  -webkit-appearance: none;
+}
+
+textarea,
+input[type=submit],
+input[type=text] {
+  -webkit-border-radius: 0;
+}
+
+input[type="image"] {
+  padding: 0;
+  border: none;
+}
+
+body {
+  font: 18px "SamsungOne-500", Arial, Helvetica, sans-serif;
+  line-height: 1.25;
+  margin: 0;
+  background: #fff;
+  color: #000000;
+  min-width: 1280px;
+  width: 100%;
+}
+
+a {
+  color: #000000;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #000000;
+}
+
+img {
+  border: none;
+}
+
+form,
+fieldset {
+  margin: 0;
+  padding: 0;
+  border-style: none;
+}
+
+input, textarea, select {
+  font: 100% "Lucida Grande", arial, sans-serif;
+  vertical-align: middle;
+  color: #000;
+}
+
+label {
+  vertical-align: middle;
+}
+
+input:focus {
+  outline: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+em {
+  font-style: italic;
+}
+
+p {
+  margin: 0 0 22px;
+}
+
+h1, h2, p {
+  position: relative;
+  z-index: 2;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.content-holder {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+#nav ul:after,
+.content-holder:after
+.header-top:after {
+  display: block;
+  content: '';
+  clear: both;
+}
+
+.vertical-aligment-box, #desc-top {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.vertical-aligment-el, #desc-top:after {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  content: '';
+}
+
+h1 {
+  color: #000000;
+  font: bold 104px Arial, Helvetica, sans-serif;
+  margin: 0 0 60px;
+  text-align: center;
+}
+
+h2 {
+  color: #000000;
+  font: bold 85px Arial, Helvetica, sans-serif;
+  margin: 0 0 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn {
+  min-width: 285px;
+  height: 46px;
+  line-height: 46px;
+  font-size: 20px;
+  display: inline-block;
+  border: 2px solid #000;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  z-index: 4;
+  background: #fff;
+}
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.css-animation-default, #phone01-img, #phone02-img, #phone03-img, #phone04-img, #phone05-img, #scrolled-phone.default,
+#top-section-phone.default,
+#dark-line-box-phone.default,
+#slider-phone.default,
+#gear-360-phone.default,
+#gear-vr-phone.default,
+#music-phone.default, #scrolled-phone.anim1,
+#top-section-phone.anim1,
+#dark-line-box-phone.anim1,
+#slider-phone.anim1,
+#gear-360-phone.anim1,
+#gear-vr-phone.anim1,
+#music-phone.anim1, #scrolled-phone.anim2,
+#top-section-phone.anim2,
+#dark-line-box-phone.anim2,
+#slider-phone.anim2,
+#gear-360-phone.anim2,
+#gear-vr-phone.anim2,
+#music-phone.anim2, #scrolled-phone.anim2-2,
+#top-section-phone.anim2-2,
+#dark-line-box-phone.anim2-2,
+#slider-phone.anim2-2,
+#gear-360-phone.anim2-2,
+#gear-vr-phone.anim2-2,
+#music-phone.anim2-2, #scrolled-phone.anim3,
+#top-section-phone.anim3,
+#dark-line-box-phone.anim3,
+#slider-phone.anim3,
+#gear-360-phone.anim3,
+#gear-vr-phone.anim3,
+#music-phone.anim3, #scrolled-phone.anim4,
+#top-section-phone.anim4,
+#dark-line-box-phone.anim4,
+#slider-phone.anim4,
+#gear-360-phone.anim4,
+#gear-vr-phone.anim4,
+#music-phone.anim4, #scrolled-phone.anim5,
+#top-section-phone.anim5,
+#dark-line-box-phone.anim5,
+#slider-phone.anim5,
+#gear-360-phone.anim5,
+#gear-vr-phone.anim5,
+#music-phone.anim5, #scrolled-phone.anim6,
+#top-section-phone.anim6,
+#dark-line-box-phone.anim6,
+#slider-phone.anim6,
+#gear-360-phone.anim6,
+#gear-vr-phone.anim6,
+#music-phone.anim6, #scrolled-phone.anim7,
+#top-section-phone.anim7,
+#dark-line-box-phone.anim7,
+#slider-phone.anim7,
+#gear-360-phone.anim7,
+#gear-vr-phone.anim7,
+#music-phone.anim7, #scrolled-phone.anim8,
+#top-section-phone.anim8,
+#dark-line-box-phone.anim8,
+#slider-phone.anim8,
+#gear-360-phone.anim8,
+#gear-vr-phone.anim8,
+#music-phone.anim8, #scrolled-phone.anim9,
+#top-section-phone.anim9,
+#dark-line-box-phone.anim9,
+#slider-phone.anim9,
+#gear-360-phone.anim9,
+#gear-vr-phone.anim9,
+#music-phone.anim9, #scrolled-phone.anim10,
+#top-section-phone.anim10,
+#dark-line-box-phone.anim10,
+#slider-phone.anim10,
+#gear-360-phone.anim10,
+#gear-vr-phone.anim10,
+#music-phone.anim10, #scrolled-phone.anim11,
+#top-section-phone.anim11,
+#dark-line-box-phone.anim11,
+#slider-phone.anim11,
+#gear-360-phone.anim11,
+#gear-vr-phone.anim11,
+#music-phone.anim11, #scrolled-phone.anim12,
+#top-section-phone.anim12,
+#dark-line-box-phone.anim12,
+#slider-phone.anim12,
+#gear-360-phone.anim12,
+#gear-vr-phone.anim12,
+#music-phone.anim12, #scrolled-phone.anim13,
+#top-section-phone.anim13,
+#dark-line-box-phone.anim13,
+#slider-phone.anim13,
+#gear-360-phone.anim13,
+#gear-vr-phone.anim13,
+#music-phone.anim13, #scrolled-phone.anim14,
+#top-section-phone.anim14,
+#dark-line-box-phone.anim14,
+#slider-phone.anim14,
+#gear-360-phone.anim14,
+#gear-vr-phone.anim14,
+#music-phone.anim14, #scrolled-phone.anim15,
+#top-section-phone.anim15,
+#dark-line-box-phone.anim15,
+#slider-phone.anim15,
+#gear-360-phone.anim15,
+#gear-vr-phone.anim15,
+#music-phone.anim15, #scrolled-phone.anim16,
+#top-section-phone.anim16,
+#dark-line-box-phone.anim16,
+#slider-phone.anim16,
+#gear-360-phone.anim16,
+#gear-vr-phone.anim16,
+#music-phone.anim16, #scrolled-phone.anim17,
+#top-section-phone.anim17,
+#dark-line-box-phone.anim17,
+#slider-phone.anim17,
+#gear-360-phone.anim17,
+#gear-vr-phone.anim17,
+#music-phone.anim17, #scrolled-phone.anim18,
+#top-section-phone.anim18,
+#dark-line-box-phone.anim18,
+#slider-phone.anim18,
+#gear-360-phone.anim18,
+#gear-vr-phone.anim18,
+#music-phone.anim18, #scrolled-phone.anim19,
+#top-section-phone.anim19,
+#dark-line-box-phone.anim19,
+#slider-phone.anim19,
+#gear-360-phone.anim19,
+#gear-vr-phone.anim19,
+#music-phone.anim19, #scrolled-phone.anim20,
+#top-section-phone.anim20,
+#dark-line-box-phone.anim20,
+#slider-phone.anim20,
+#gear-360-phone.anim20,
+#gear-vr-phone.anim20,
+#music-phone.anim20, #dark-line-box .line-holder #dark-line-box-phone, #dark-line-box .line-holder .anim-line, #dark-line-box .line-holder .anim-tel, #slider-section #slider-phone, #slider-section #smart-clock, .swiper-container, #gear-360-section #gear-360-phone, #gear-360-section #phone-view02,
+#gear-360-section #phone-view03, #gear-360-section #gear-360, #gear-vr-phone, #music-section #headphones, #music-phone, #charger-section .charger-final {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 1.5s;
+  -o-transition-duration: 1.5s;
+  -webkit-transition-duration: 1.5s;
+  transition-duration: 1.5s;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+}
+
+#phone02-img, #phone03-img, #phone04-img, #phone05-img {
+  width: 0;
+  opacity: 0;
+  visibility: hidden;
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+}
+#phone02-img img, #phone03-img img, #phone04-img img, #phone05-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#scrolled-phone,
+#top-section-phone,
+#dark-line-box-phone,
+#slider-phone,
+#gear-360-phone,
+#gear-vr-phone,
+#music-phone {
+  z-index: 1;
+  position: absolute;
+  left: 432px;
+  top: 219px;
+  -o-transform: rotate(23deg) scale(0.8);
+  -ms-transform: rotate(23deg) scale(0.8);
+  -webkit-transform: rotate(23deg) scale(0.8);
+  -moz-transform: rotate(23deg) scale(0.8);
+  transform: rotate(23deg) scale(0.8);
+}
+#scrolled-phone.default,
+#top-section-phone.default,
+#dark-line-box-phone.default,
+#slider-phone.default,
+#gear-360-phone.default,
+#gear-vr-phone.default,
+#music-phone.default {
+  top: 219px;
+  -o-transform: rotate(23deg) scale(0.8);
+  -ms-transform: rotate(23deg) scale(0.8);
+  -webkit-transform: rotate(23deg) scale(0.8);
+  -moz-transform: rotate(23deg) scale(0.8);
+  transform: rotate(23deg) scale(0.8);
+}
+#scrolled-phone.anim1,
+#top-section-phone.anim1,
+#dark-line-box-phone.anim1,
+#slider-phone.anim1,
+#gear-360-phone.anim1,
+#gear-vr-phone.anim1,
+#music-phone.anim1 {
+  top: 250px;
+  -o-transform: rotate(20deg) scale(0.8);
+  -ms-transform: rotate(20deg) scale(0.8);
+  -webkit-transform: rotate(20deg) scale(0.8);
+  -moz-transform: rotate(20deg) scale(0.8);
+  transform: rotate(20deg) scale(0.8);
+}
+#scrolled-phone.anim2,
+#top-section-phone.anim2,
+#dark-line-box-phone.anim2,
+#slider-phone.anim2,
+#gear-360-phone.anim2,
+#gear-vr-phone.anim2,
+#music-phone.anim2 {
+  top: 280px;
+  -o-transform: rotate(18deg) scale(0.8);
+  -ms-transform: rotate(18deg) scale(0.8);
+  -webkit-transform: rotate(18deg) scale(0.8);
+  -moz-transform: rotate(18deg) scale(0.8);
+  transform: rotate(18deg) scale(0.8);
+}
+#scrolled-phone.anim2-2,
+#top-section-phone.anim2-2,
+#dark-line-box-phone.anim2-2,
+#slider-phone.anim2-2,
+#gear-360-phone.anim2-2,
+#gear-vr-phone.anim2-2,
+#music-phone.anim2-2 {
+  top: 310px;
+  -o-transform: rotate(15deg) scale(0.8);
+  -ms-transform: rotate(15deg) scale(0.8);
+  -webkit-transform: rotate(15deg) scale(0.8);
+  -moz-transform: rotate(15deg) scale(0.8);
+  transform: rotate(15deg) scale(0.8);
+}
+#scrolled-phone.anim3,
+#top-section-phone.anim3,
+#dark-line-box-phone.anim3,
+#slider-phone.anim3,
+#gear-360-phone.anim3,
+#gear-vr-phone.anim3,
+#music-phone.anim3 {
+  left: 430px !important;
+}
+#scrolled-phone.anim4,
+#top-section-phone.anim4,
+#dark-line-box-phone.anim4,
+#slider-phone.anim4,
+#gear-360-phone.anim4,
+#gear-vr-phone.anim4,
+#music-phone.anim4 {
+  top: 1650px;
+  left: 480px;
+  -o-transform: rotate(0) scale(0.99);
+  -ms-transform: rotate(0) scale(0.99);
+  -webkit-transform: rotate(0) scale(0.99);
+  -moz-transform: rotate(0) scale(0.99);
+  transform: rotate(0) scale(0.99);
+}
+#scrolled-phone.anim5,
+#top-section-phone.anim5,
+#dark-line-box-phone.anim5,
+#slider-phone.anim5,
+#gear-360-phone.anim5,
+#gear-vr-phone.anim5,
+#music-phone.anim5 {
+  top: 625px !important;
+  left: 238px !important;
+  -o-transform: rotate(0) scale(0.99);
+  -ms-transform: rotate(0) scale(0.99);
+  -webkit-transform: rotate(0) scale(0.99);
+  -moz-transform: rotate(0) scale(0.99);
+  transform: rotate(0) scale(0.99);
+}
+#scrolled-phone.anim6,
+#top-section-phone.anim6,
+#dark-line-box-phone.anim6,
+#slider-phone.anim6,
+#gear-360-phone.anim6,
+#gear-vr-phone.anim6,
+#music-phone.anim6 {
+  top: 700px !important;
+  left: -450px !important;
+  -o-transform: rotate(0) scale(0.99);
+  -ms-transform: rotate(0) scale(0.99);
+  -webkit-transform: rotate(0) scale(0.99);
+  -moz-transform: rotate(0) scale(0.99);
+  transform: rotate(0) scale(0.99);
+}
+#scrolled-phone.anim7,
+#top-section-phone.anim7,
+#dark-line-box-phone.anim7,
+#slider-phone.anim7,
+#gear-360-phone.anim7,
+#gear-vr-phone.anim7,
+#music-phone.anim7 {
+  top: -70px !important;
+  left: 655px !important;
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+#scrolled-phone.anim7 #phone02-img,
+#top-section-phone.anim7 #phone02-img,
+#dark-line-box-phone.anim7 #phone02-img,
+#slider-phone.anim7 #phone02-img,
+#gear-360-phone.anim7 #phone02-img,
+#gear-vr-phone.anim7 #phone02-img,
+#music-phone.anim7 #phone02-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim7 #phone01-img,
+#top-section-phone.anim7 #phone01-img,
+#dark-line-box-phone.anim7 #phone01-img,
+#slider-phone.anim7 #phone01-img,
+#gear-360-phone.anim7 #phone01-img,
+#gear-vr-phone.anim7 #phone01-img,
+#music-phone.anim7 #phone01-img {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+}
+#scrolled-phone.anim8,
+#top-section-phone.anim8,
+#dark-line-box-phone.anim8,
+#slider-phone.anim8,
+#gear-360-phone.anim8,
+#gear-vr-phone.anim8,
+#music-phone.anim8 {
+  top: 440px !important;
+  left: 655px !important;
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+#scrolled-phone.anim8 #phone02-img,
+#top-section-phone.anim8 #phone02-img,
+#dark-line-box-phone.anim8 #phone02-img,
+#slider-phone.anim8 #phone02-img,
+#gear-360-phone.anim8 #phone02-img,
+#gear-vr-phone.anim8 #phone02-img,
+#music-phone.anim8 #phone02-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim8 #phone01-img,
+#top-section-phone.anim8 #phone01-img,
+#dark-line-box-phone.anim8 #phone01-img,
+#slider-phone.anim8 #phone01-img,
+#gear-360-phone.anim8 #phone01-img,
+#gear-vr-phone.anim8 #phone01-img,
+#music-phone.anim8 #phone01-img {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+}
+#scrolled-phone.anim9,
+#top-section-phone.anim9,
+#dark-line-box-phone.anim9,
+#slider-phone.anim9,
+#gear-360-phone.anim9,
+#gear-vr-phone.anim9,
+#music-phone.anim9 {
+  top: 750px !important;
+  left: 1400px !important;
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+#scrolled-phone.anim9 #phone02-img,
+#top-section-phone.anim9 #phone02-img,
+#dark-line-box-phone.anim9 #phone02-img,
+#slider-phone.anim9 #phone02-img,
+#gear-360-phone.anim9 #phone02-img,
+#gear-vr-phone.anim9 #phone02-img,
+#music-phone.anim9 #phone02-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim9 #phone01-img,
+#scrolled-phone.anim9 #phone03-img,
+#scrolled-phone.anim9 #phone04-img
+#phone05-img,
+#top-section-phone.anim9 #phone01-img,
+#top-section-phone.anim9 #phone03-img,
+#top-section-phone.anim9 #phone04-img
+#phone05-img,
+#dark-line-box-phone.anim9 #phone01-img,
+#dark-line-box-phone.anim9 #phone03-img,
+#dark-line-box-phone.anim9 #phone04-img
+#phone05-img,
+#slider-phone.anim9 #phone01-img,
+#slider-phone.anim9 #phone03-img,
+#slider-phone.anim9 #phone04-img
+#phone05-img,
+#gear-360-phone.anim9 #phone01-img,
+#gear-360-phone.anim9 #phone03-img,
+#gear-360-phone.anim9 #phone04-img
+#phone05-img,
+#gear-vr-phone.anim9 #phone01-img,
+#gear-vr-phone.anim9 #phone03-img,
+#gear-vr-phone.anim9 #phone04-img
+#phone05-img,
+#music-phone.anim9 #phone01-img,
+#music-phone.anim9 #phone03-img,
+#music-phone.anim9 #phone04-img
+#phone05-img {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+}
+#scrolled-phone.anim10,
+#top-section-phone.anim10,
+#dark-line-box-phone.anim10,
+#slider-phone.anim10,
+#gear-360-phone.anim10,
+#gear-vr-phone.anim10,
+#music-phone.anim10 {
+  top: 4550px;
+  left: 400px;
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+#scrolled-phone.anim10 #phone03-img,
+#top-section-phone.anim10 #phone03-img,
+#dark-line-box-phone.anim10 #phone03-img,
+#slider-phone.anim10 #phone03-img,
+#gear-360-phone.anim10 #phone03-img,
+#gear-vr-phone.anim10 #phone03-img,
+#music-phone.anim10 #phone03-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim10 #phone01-img,
+#scrolled-phone.anim10 #phone02-img,
+#scrolled-phone.anim10 #phone04-img,
+#scrolled-phone.anim10 #phone05-img,
+#top-section-phone.anim10 #phone01-img,
+#top-section-phone.anim10 #phone02-img,
+#top-section-phone.anim10 #phone04-img,
+#top-section-phone.anim10 #phone05-img,
+#dark-line-box-phone.anim10 #phone01-img,
+#dark-line-box-phone.anim10 #phone02-img,
+#dark-line-box-phone.anim10 #phone04-img,
+#dark-line-box-phone.anim10 #phone05-img,
+#slider-phone.anim10 #phone01-img,
+#slider-phone.anim10 #phone02-img,
+#slider-phone.anim10 #phone04-img,
+#slider-phone.anim10 #phone05-img,
+#gear-360-phone.anim10 #phone01-img,
+#gear-360-phone.anim10 #phone02-img,
+#gear-360-phone.anim10 #phone04-img,
+#gear-360-phone.anim10 #phone05-img,
+#gear-vr-phone.anim10 #phone01-img,
+#gear-vr-phone.anim10 #phone02-img,
+#gear-vr-phone.anim10 #phone04-img,
+#gear-vr-phone.anim10 #phone05-img,
+#music-phone.anim10 #phone01-img,
+#music-phone.anim10 #phone02-img,
+#music-phone.anim10 #phone04-img,
+#music-phone.anim10 #phone05-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+#scrolled-phone.anim11,
+#top-section-phone.anim11,
+#dark-line-box-phone.anim11,
+#slider-phone.anim11,
+#gear-360-phone.anim11,
+#gear-vr-phone.anim11,
+#music-phone.anim11 {
+  top: 4735px;
+  left: 330px;
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+#scrolled-phone.anim11 #phone04-img,
+#top-section-phone.anim11 #phone04-img,
+#dark-line-box-phone.anim11 #phone04-img,
+#slider-phone.anim11 #phone04-img,
+#gear-360-phone.anim11 #phone04-img,
+#gear-vr-phone.anim11 #phone04-img,
+#music-phone.anim11 #phone04-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim11 #phone01-img,
+#scrolled-phone.anim11 #phone02-img,
+#scrolled-phone.anim11 #phone03-img,
+#scrolled-phone.anim11 #phone05-img,
+#top-section-phone.anim11 #phone01-img,
+#top-section-phone.anim11 #phone02-img,
+#top-section-phone.anim11 #phone03-img,
+#top-section-phone.anim11 #phone05-img,
+#dark-line-box-phone.anim11 #phone01-img,
+#dark-line-box-phone.anim11 #phone02-img,
+#dark-line-box-phone.anim11 #phone03-img,
+#dark-line-box-phone.anim11 #phone05-img,
+#slider-phone.anim11 #phone01-img,
+#slider-phone.anim11 #phone02-img,
+#slider-phone.anim11 #phone03-img,
+#slider-phone.anim11 #phone05-img,
+#gear-360-phone.anim11 #phone01-img,
+#gear-360-phone.anim11 #phone02-img,
+#gear-360-phone.anim11 #phone03-img,
+#gear-360-phone.anim11 #phone05-img,
+#gear-vr-phone.anim11 #phone01-img,
+#gear-vr-phone.anim11 #phone02-img,
+#gear-vr-phone.anim11 #phone03-img,
+#gear-vr-phone.anim11 #phone05-img,
+#music-phone.anim11 #phone01-img,
+#music-phone.anim11 #phone02-img,
+#music-phone.anim11 #phone03-img,
+#music-phone.anim11 #phone05-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+#scrolled-phone.anim12,
+#top-section-phone.anim12,
+#dark-line-box-phone.anim12,
+#slider-phone.anim12,
+#gear-360-phone.anim12,
+#gear-vr-phone.anim12,
+#music-phone.anim12 {
+  top: 5300px;
+  left: 280px;
+  -o-transform: rotate(5deg) scale(1);
+  -ms-transform: rotate(5deg) scale(1);
+  -webkit-transform: rotate(5deg) scale(1);
+  -moz-transform: rotate(5deg) scale(1);
+  transform: rotate(5deg) scale(1);
+  z-index: 3;
+}
+#scrolled-phone.anim12 #phone04-img,
+#top-section-phone.anim12 #phone04-img,
+#dark-line-box-phone.anim12 #phone04-img,
+#slider-phone.anim12 #phone04-img,
+#gear-360-phone.anim12 #phone04-img,
+#gear-vr-phone.anim12 #phone04-img,
+#music-phone.anim12 #phone04-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim12 #phone01-img,
+#scrolled-phone.anim12 #phone02-img,
+#scrolled-phone.anim12 #phone03-img,
+#scrolled-phone.anim12 #phone05-img,
+#top-section-phone.anim12 #phone01-img,
+#top-section-phone.anim12 #phone02-img,
+#top-section-phone.anim12 #phone03-img,
+#top-section-phone.anim12 #phone05-img,
+#dark-line-box-phone.anim12 #phone01-img,
+#dark-line-box-phone.anim12 #phone02-img,
+#dark-line-box-phone.anim12 #phone03-img,
+#dark-line-box-phone.anim12 #phone05-img,
+#slider-phone.anim12 #phone01-img,
+#slider-phone.anim12 #phone02-img,
+#slider-phone.anim12 #phone03-img,
+#slider-phone.anim12 #phone05-img,
+#gear-360-phone.anim12 #phone01-img,
+#gear-360-phone.anim12 #phone02-img,
+#gear-360-phone.anim12 #phone03-img,
+#gear-360-phone.anim12 #phone05-img,
+#gear-vr-phone.anim12 #phone01-img,
+#gear-vr-phone.anim12 #phone02-img,
+#gear-vr-phone.anim12 #phone03-img,
+#gear-vr-phone.anim12 #phone05-img,
+#music-phone.anim12 #phone01-img,
+#music-phone.anim12 #phone02-img,
+#music-phone.anim12 #phone03-img,
+#music-phone.anim12 #phone05-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+#scrolled-phone.anim13,
+#top-section-phone.anim13,
+#dark-line-box-phone.anim13,
+#slider-phone.anim13,
+#gear-360-phone.anim13,
+#gear-vr-phone.anim13,
+#music-phone.anim13 {
+  opacity: 1 !important;
+  visibility: visible !important;
+  z-index: 3;
+}
+#scrolled-phone.anim13 #phone04-img,
+#top-section-phone.anim13 #phone04-img,
+#dark-line-box-phone.anim13 #phone04-img,
+#slider-phone.anim13 #phone04-img,
+#gear-360-phone.anim13 #phone04-img,
+#gear-vr-phone.anim13 #phone04-img,
+#music-phone.anim13 #phone04-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim13 #phone01-img,
+#scrolled-phone.anim13 #phone02-img,
+#scrolled-phone.anim13 #phone03-img,
+#scrolled-phone.anim13 #phone05-img,
+#top-section-phone.anim13 #phone01-img,
+#top-section-phone.anim13 #phone02-img,
+#top-section-phone.anim13 #phone03-img,
+#top-section-phone.anim13 #phone05-img,
+#dark-line-box-phone.anim13 #phone01-img,
+#dark-line-box-phone.anim13 #phone02-img,
+#dark-line-box-phone.anim13 #phone03-img,
+#dark-line-box-phone.anim13 #phone05-img,
+#slider-phone.anim13 #phone01-img,
+#slider-phone.anim13 #phone02-img,
+#slider-phone.anim13 #phone03-img,
+#slider-phone.anim13 #phone05-img,
+#gear-360-phone.anim13 #phone01-img,
+#gear-360-phone.anim13 #phone02-img,
+#gear-360-phone.anim13 #phone03-img,
+#gear-360-phone.anim13 #phone05-img,
+#gear-vr-phone.anim13 #phone01-img,
+#gear-vr-phone.anim13 #phone02-img,
+#gear-vr-phone.anim13 #phone03-img,
+#gear-vr-phone.anim13 #phone05-img,
+#music-phone.anim13 #phone01-img,
+#music-phone.anim13 #phone02-img,
+#music-phone.anim13 #phone03-img,
+#music-phone.anim13 #phone05-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+#scrolled-phone.anim14,
+#top-section-phone.anim14,
+#dark-line-box-phone.anim14,
+#slider-phone.anim14,
+#gear-360-phone.anim14,
+#gear-vr-phone.anim14,
+#music-phone.anim14 {
+  top: 380px !important;
+  left: 288px !important;
+  -o-transform: rotate(5deg) scale(1);
+  -ms-transform: rotate(5deg) scale(1);
+  -webkit-transform: rotate(5deg) scale(1);
+  -moz-transform: rotate(5deg) scale(1);
+  transform: rotate(5deg) scale(1);
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+#scrolled-phone.anim14 #phone01-img,
+#top-section-phone.anim14 #phone01-img,
+#dark-line-box-phone.anim14 #phone01-img,
+#slider-phone.anim14 #phone01-img,
+#gear-360-phone.anim14 #phone01-img,
+#gear-vr-phone.anim14 #phone01-img,
+#music-phone.anim14 #phone01-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim14 #phone02-img,
+#scrolled-phone.anim14 #phone03-img,
+#scrolled-phone.anim14 #phone04-img,
+#scrolled-phone.anim14 #phone05-img,
+#top-section-phone.anim14 #phone02-img,
+#top-section-phone.anim14 #phone03-img,
+#top-section-phone.anim14 #phone04-img,
+#top-section-phone.anim14 #phone05-img,
+#dark-line-box-phone.anim14 #phone02-img,
+#dark-line-box-phone.anim14 #phone03-img,
+#dark-line-box-phone.anim14 #phone04-img,
+#dark-line-box-phone.anim14 #phone05-img,
+#slider-phone.anim14 #phone02-img,
+#slider-phone.anim14 #phone03-img,
+#slider-phone.anim14 #phone04-img,
+#slider-phone.anim14 #phone05-img,
+#gear-360-phone.anim14 #phone02-img,
+#gear-360-phone.anim14 #phone03-img,
+#gear-360-phone.anim14 #phone04-img,
+#gear-360-phone.anim14 #phone05-img,
+#gear-vr-phone.anim14 #phone02-img,
+#gear-vr-phone.anim14 #phone03-img,
+#gear-vr-phone.anim14 #phone04-img,
+#gear-vr-phone.anim14 #phone05-img,
+#music-phone.anim14 #phone02-img,
+#music-phone.anim14 #phone03-img,
+#music-phone.anim14 #phone04-img,
+#music-phone.anim14 #phone05-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+#scrolled-phone.anim15,
+#top-section-phone.anim15,
+#dark-line-box-phone.anim15,
+#slider-phone.anim15,
+#gear-360-phone.anim15,
+#gear-vr-phone.anim15,
+#music-phone.anim15 {
+  top: 555px !important;
+  left: 288px !important;
+  -o-transform: rotate(11deg) scale(1);
+  -ms-transform: rotate(11deg) scale(1);
+  -webkit-transform: rotate(11deg) scale(1);
+  -moz-transform: rotate(11deg) scale(1);
+  transform: rotate(11deg) scale(1);
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+#scrolled-phone.anim15 #phone01-img,
+#top-section-phone.anim15 #phone01-img,
+#dark-line-box-phone.anim15 #phone01-img,
+#slider-phone.anim15 #phone01-img,
+#gear-360-phone.anim15 #phone01-img,
+#gear-vr-phone.anim15 #phone01-img,
+#music-phone.anim15 #phone01-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim15 #phone02-img,
+#scrolled-phone.anim15 #phone03-img,
+#scrolled-phone.anim15 #phone04-img,
+#scrolled-phone.anim15 #phone05-img,
+#top-section-phone.anim15 #phone02-img,
+#top-section-phone.anim15 #phone03-img,
+#top-section-phone.anim15 #phone04-img,
+#top-section-phone.anim15 #phone05-img,
+#dark-line-box-phone.anim15 #phone02-img,
+#dark-line-box-phone.anim15 #phone03-img,
+#dark-line-box-phone.anim15 #phone04-img,
+#dark-line-box-phone.anim15 #phone05-img,
+#slider-phone.anim15 #phone02-img,
+#slider-phone.anim15 #phone03-img,
+#slider-phone.anim15 #phone04-img,
+#slider-phone.anim15 #phone05-img,
+#gear-360-phone.anim15 #phone02-img,
+#gear-360-phone.anim15 #phone03-img,
+#gear-360-phone.anim15 #phone04-img,
+#gear-360-phone.anim15 #phone05-img,
+#gear-vr-phone.anim15 #phone02-img,
+#gear-vr-phone.anim15 #phone03-img,
+#gear-vr-phone.anim15 #phone04-img,
+#gear-vr-phone.anim15 #phone05-img,
+#music-phone.anim15 #phone02-img,
+#music-phone.anim15 #phone03-img,
+#music-phone.anim15 #phone04-img,
+#music-phone.anim15 #phone05-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+#scrolled-phone.anim16,
+#top-section-phone.anim16,
+#dark-line-box-phone.anim16,
+#slider-phone.anim16,
+#gear-360-phone.anim16,
+#gear-vr-phone.anim16,
+#music-phone.anim16 {
+  top: 460px !important;
+  left: 500px !important;
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+#scrolled-phone.anim16 #phone05-img,
+#top-section-phone.anim16 #phone05-img,
+#dark-line-box-phone.anim16 #phone05-img,
+#slider-phone.anim16 #phone05-img,
+#gear-360-phone.anim16 #phone05-img,
+#gear-vr-phone.anim16 #phone05-img,
+#music-phone.anim16 #phone05-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim16 #phone01-img,
+#scrolled-phone.anim16 #phone02-img,
+#scrolled-phone.anim16 #phone03-img,
+#scrolled-phone.anim16 #phone04-img,
+#top-section-phone.anim16 #phone01-img,
+#top-section-phone.anim16 #phone02-img,
+#top-section-phone.anim16 #phone03-img,
+#top-section-phone.anim16 #phone04-img,
+#dark-line-box-phone.anim16 #phone01-img,
+#dark-line-box-phone.anim16 #phone02-img,
+#dark-line-box-phone.anim16 #phone03-img,
+#dark-line-box-phone.anim16 #phone04-img,
+#slider-phone.anim16 #phone01-img,
+#slider-phone.anim16 #phone02-img,
+#slider-phone.anim16 #phone03-img,
+#slider-phone.anim16 #phone04-img,
+#gear-360-phone.anim16 #phone01-img,
+#gear-360-phone.anim16 #phone02-img,
+#gear-360-phone.anim16 #phone03-img,
+#gear-360-phone.anim16 #phone04-img,
+#gear-vr-phone.anim16 #phone01-img,
+#gear-vr-phone.anim16 #phone02-img,
+#gear-vr-phone.anim16 #phone03-img,
+#gear-vr-phone.anim16 #phone04-img,
+#music-phone.anim16 #phone01-img,
+#music-phone.anim16 #phone02-img,
+#music-phone.anim16 #phone03-img,
+#music-phone.anim16 #phone04-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+#scrolled-phone.anim17,
+#top-section-phone.anim17,
+#dark-line-box-phone.anim17,
+#slider-phone.anim17,
+#gear-360-phone.anim17,
+#gear-vr-phone.anim17,
+#music-phone.anim17 {
+  top: 598px !important;
+  left: 500px !important;
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+#scrolled-phone.anim17 #phone05-img,
+#top-section-phone.anim17 #phone05-img,
+#dark-line-box-phone.anim17 #phone05-img,
+#slider-phone.anim17 #phone05-img,
+#gear-360-phone.anim17 #phone05-img,
+#gear-vr-phone.anim17 #phone05-img,
+#music-phone.anim17 #phone05-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim17 #phone01-img,
+#scrolled-phone.anim17 #phone02-img,
+#scrolled-phone.anim17 #phone03-img,
+#scrolled-phone.anim17 #phone04-img,
+#top-section-phone.anim17 #phone01-img,
+#top-section-phone.anim17 #phone02-img,
+#top-section-phone.anim17 #phone03-img,
+#top-section-phone.anim17 #phone04-img,
+#dark-line-box-phone.anim17 #phone01-img,
+#dark-line-box-phone.anim17 #phone02-img,
+#dark-line-box-phone.anim17 #phone03-img,
+#dark-line-box-phone.anim17 #phone04-img,
+#slider-phone.anim17 #phone01-img,
+#slider-phone.anim17 #phone02-img,
+#slider-phone.anim17 #phone03-img,
+#slider-phone.anim17 #phone04-img,
+#gear-360-phone.anim17 #phone01-img,
+#gear-360-phone.anim17 #phone02-img,
+#gear-360-phone.anim17 #phone03-img,
+#gear-360-phone.anim17 #phone04-img,
+#gear-vr-phone.anim17 #phone01-img,
+#gear-vr-phone.anim17 #phone02-img,
+#gear-vr-phone.anim17 #phone03-img,
+#gear-vr-phone.anim17 #phone04-img,
+#music-phone.anim17 #phone01-img,
+#music-phone.anim17 #phone02-img,
+#music-phone.anim17 #phone03-img,
+#music-phone.anim17 #phone04-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+#scrolled-phone.anim18,
+#top-section-phone.anim18,
+#dark-line-box-phone.anim18,
+#slider-phone.anim18,
+#gear-360-phone.anim18,
+#gear-vr-phone.anim18,
+#music-phone.anim18 {
+  top: 700px !important;
+  left: 500px !important;
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+#scrolled-phone.anim18 #phone05-img,
+#top-section-phone.anim18 #phone05-img,
+#dark-line-box-phone.anim18 #phone05-img,
+#slider-phone.anim18 #phone05-img,
+#gear-360-phone.anim18 #phone05-img,
+#gear-vr-phone.anim18 #phone05-img,
+#music-phone.anim18 #phone05-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim18 #phone01-img,
+#scrolled-phone.anim18 #phone02-img,
+#scrolled-phone.anim18 #phone03-img,
+#scrolled-phone.anim18 #phone04-img,
+#top-section-phone.anim18 #phone01-img,
+#top-section-phone.anim18 #phone02-img,
+#top-section-phone.anim18 #phone03-img,
+#top-section-phone.anim18 #phone04-img,
+#dark-line-box-phone.anim18 #phone01-img,
+#dark-line-box-phone.anim18 #phone02-img,
+#dark-line-box-phone.anim18 #phone03-img,
+#dark-line-box-phone.anim18 #phone04-img,
+#slider-phone.anim18 #phone01-img,
+#slider-phone.anim18 #phone02-img,
+#slider-phone.anim18 #phone03-img,
+#slider-phone.anim18 #phone04-img,
+#gear-360-phone.anim18 #phone01-img,
+#gear-360-phone.anim18 #phone02-img,
+#gear-360-phone.anim18 #phone03-img,
+#gear-360-phone.anim18 #phone04-img,
+#gear-vr-phone.anim18 #phone01-img,
+#gear-vr-phone.anim18 #phone02-img,
+#gear-vr-phone.anim18 #phone03-img,
+#gear-vr-phone.anim18 #phone04-img,
+#music-phone.anim18 #phone01-img,
+#music-phone.anim18 #phone02-img,
+#music-phone.anim18 #phone03-img,
+#music-phone.anim18 #phone04-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+#scrolled-phone.anim19,
+#top-section-phone.anim19,
+#dark-line-box-phone.anim19,
+#slider-phone.anim19,
+#gear-360-phone.anim19,
+#gear-vr-phone.anim19,
+#music-phone.anim19 {
+  top: 7900px;
+  left: 470px;
+  -o-transform: rotate(-25deg) scale(1);
+  -ms-transform: rotate(-25deg) scale(1);
+  -webkit-transform: rotate(-25deg) scale(1);
+  -moz-transform: rotate(-25deg) scale(1);
+  transform: rotate(-25deg) scale(1);
+}
+#scrolled-phone.anim19 #phone05-img,
+#top-section-phone.anim19 #phone05-img,
+#dark-line-box-phone.anim19 #phone05-img,
+#slider-phone.anim19 #phone05-img,
+#gear-360-phone.anim19 #phone05-img,
+#gear-vr-phone.anim19 #phone05-img,
+#music-phone.anim19 #phone05-img {
+  opacity: 1;
+  visibility: visible;
+  width: auto;
+}
+#scrolled-phone.anim19 #phone01-img,
+#scrolled-phone.anim19 #phone02-img,
+#scrolled-phone.anim19 #phone03-img,
+#scrolled-phone.anim19 #phone04-img,
+#top-section-phone.anim19 #phone01-img,
+#top-section-phone.anim19 #phone02-img,
+#top-section-phone.anim19 #phone03-img,
+#top-section-phone.anim19 #phone04-img,
+#dark-line-box-phone.anim19 #phone01-img,
+#dark-line-box-phone.anim19 #phone02-img,
+#dark-line-box-phone.anim19 #phone03-img,
+#dark-line-box-phone.anim19 #phone04-img,
+#slider-phone.anim19 #phone01-img,
+#slider-phone.anim19 #phone02-img,
+#slider-phone.anim19 #phone03-img,
+#slider-phone.anim19 #phone04-img,
+#gear-360-phone.anim19 #phone01-img,
+#gear-360-phone.anim19 #phone02-img,
+#gear-360-phone.anim19 #phone03-img,
+#gear-360-phone.anim19 #phone04-img,
+#gear-vr-phone.anim19 #phone01-img,
+#gear-vr-phone.anim19 #phone02-img,
+#gear-vr-phone.anim19 #phone03-img,
+#gear-vr-phone.anim19 #phone04-img,
+#music-phone.anim19 #phone01-img,
+#music-phone.anim19 #phone02-img,
+#music-phone.anim19 #phone03-img,
+#music-phone.anim19 #phone04-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+#scrolled-phone.anim20,
+#top-section-phone.anim20,
+#dark-line-box-phone.anim20,
+#slider-phone.anim20,
+#gear-360-phone.anim20,
+#gear-vr-phone.anim20,
+#music-phone.anim20 {
+  top: 8150px;
+  left: 470px;
+  -o-transform: rotate(-25deg) scale(1);
+  -ms-transform: rotate(-25deg) scale(1);
+  -webkit-transform: rotate(-25deg) scale(1);
+  -moz-transform: rotate(-25deg) scale(1);
+  transform: rotate(-25deg) scale(1);
+}
+#scrolled-phone.anim20 #phone05-img,
+#top-section-phone.anim20 #phone05-img,
+#dark-line-box-phone.anim20 #phone05-img,
+#slider-phone.anim20 #phone05-img,
+#gear-360-phone.anim20 #phone05-img,
+#gear-vr-phone.anim20 #phone05-img,
+#music-phone.anim20 #phone05-img {
+  opacity: 0;
+  visibility: hidden;
+  width: auto;
+}
+#scrolled-phone.anim20 #phone01-img,
+#scrolled-phone.anim20 #phone02-img,
+#scrolled-phone.anim20 #phone03-img,
+#scrolled-phone.anim20 #phone04-img,
+#top-section-phone.anim20 #phone01-img,
+#top-section-phone.anim20 #phone02-img,
+#top-section-phone.anim20 #phone03-img,
+#top-section-phone.anim20 #phone04-img,
+#dark-line-box-phone.anim20 #phone01-img,
+#dark-line-box-phone.anim20 #phone02-img,
+#dark-line-box-phone.anim20 #phone03-img,
+#dark-line-box-phone.anim20 #phone04-img,
+#slider-phone.anim20 #phone01-img,
+#slider-phone.anim20 #phone02-img,
+#slider-phone.anim20 #phone03-img,
+#slider-phone.anim20 #phone04-img,
+#gear-360-phone.anim20 #phone01-img,
+#gear-360-phone.anim20 #phone02-img,
+#gear-360-phone.anim20 #phone03-img,
+#gear-360-phone.anim20 #phone04-img,
+#gear-vr-phone.anim20 #phone01-img,
+#gear-vr-phone.anim20 #phone02-img,
+#gear-vr-phone.anim20 #phone03-img,
+#gear-vr-phone.anim20 #phone04-img,
+#music-phone.anim20 #phone01-img,
+#music-phone.anim20 #phone02-img,
+#music-phone.anim20 #phone03-img,
+#music-phone.anim20 #phone04-img {
+  opacity: 0;
+  visibility: visible;
+  width: 0;
+}
+
+.img-box {
+  color: #fff;
+}
+
+.decor-el {
+  background-image: url(../images/sprite.png);
+  display: inline-block;
+  text-indent: -9999px;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+#header .header-top {
+  position: relative;
+  padding: 23px 40px;
+  height: 26px;
+  width: 1200px;
+  margin: 0 auto;
+}
+#header .header-top .logo, #header .header-top .logo-samsung {
+  overflow: hidden;
+  text-indent: -9999px;
+}
+#header .header-top .logo a, #header .header-top .logo-samsung a {
+  display: block;
+  min-height: 100%;
+}
+#header .header-top .logo {
+  position: absolute;
+  right: 40px;
+  top: 0;
+  background: #fff;
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+  width: 95px;
+  height: 79px;
+  text-align: center;
+}
+#header .header-top .logo img {
+  display: block;
+  width: 70px;
+  padding: 3px 0 0;
+  margin: 0 auto;
+}
+#header .header-top .logo-samsung {
+  float: left;
+}
+#header .header-top .logo-samsung img {
+  display: block;
+}
+#header .header-top .logo-samsung a {
+  color: #000000;
+  text-decoration: none;
+}
+#header #nav {
+  height: 66px;
+  line-height: 66px;
+  width: 100%;
+  position: relative;
+  text-transform: uppercase;
+  z-index: 100;
+}
+#header #nav ul {
+  text-align: center;
+  font-size: 0;
+}
+#header.fixed {
+  z-index: 1000;
+  background: #fff;
+}
+
+/* #top-section
+----------------------------------------------------------------------------*/
+#top-section {
+  background-image: url(../images/bg-top-section.jpg);
+  height: 789px;
+  position: relative;
+}
+
+/* #desc-top
+----------------------------------------------------------------------------*/
+#desc-top {
+  padding: 185px 0 0;
+  width: 1230px;
+  height: 1190px;
+  font-size: 0;
+}
+#desc-top h1 img {
+  display: inline-block;
+  margin: 0 0 30px;
+}
+#desc-top .content-holder {
+  height: 434px;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+/* #dark-line-box
+----------------------------------------------------------------------------*/
+#dark-line-box .line-holder {
+  height: 476px;
+  background: #000;
+  margin: 0 0 205px;
+  position: relative;
+}
+#dark-line-box .line-holder #dark-line-box-phone {
+  top: -131px;
+  left: -400px;
+  -o-transform: rotate(0) scale(0.99);
+  -ms-transform: rotate(0) scale(0.99);
+  -webkit-transform: rotate(0) scale(0.99);
+  -moz-transform: rotate(0) scale(0.99);
+  transform: rotate(0) scale(0.99);
+}
+#dark-line-box .line-holder .anim-line {
+  background-color: #0099f3;
+  *zoom: 1;
+  filter: progid:DXImageTransform.Microsoft.gradient(gradientType=0, startColorstr='#FF0099F3', endColorstr='#FF0038A8');
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwOTlmMyIvPjxzdG9wIG9mZnNldD0iNDklIiBzdG9wLWNvbG9yPSIjMDA2YWNmIi8+PHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDAzOGE4Ii8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNncmFkKSIgLz48L3N2Zz4g');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #0099f3), color-stop(49%, #006acf), color-stop(100%, #0038a8));
+  background-image: -moz-linear-gradient(top, #0099f3 0%, #006acf 49%, #0038a8 100%);
+  background-image: -webkit-linear-gradient(top, #0099f3 0%, #006acf 49%, #0038a8 100%);
+  background-image: linear-gradient(to bottom, #0099f3 0%, #006acf 49%, #0038a8 100%);
+  width: 561px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -700px;
+}
+#dark-line-box .line-holder .anim-line.anim-line-active {
+  left: 0;
+}
+#dark-line-box .line-holder .anim-tel {
+  top: -110px;
+  right: -400px;
+  position: absolute;
+  -ms-transform: scale(0.88);
+  -webkit-transform: scale(0.88);
+  -moz-transform: scale(0.88);
+  transform: scale(0.88);
+}
+#dark-line-box .line-holder .anim-tel.anim-tel-active {
+  right: 252px;
+}
+#dark-line-box .line-holder .anim-tel.anim-tel-active.left-m {
+  right: 370px;
+}
+
+/* #slider-section
+----------------------------------------------------------------------------*/
+#slider-section {
+  padding: 150px 0 100px;
+  position: relative;
+  width: 1280px;
+  height: 1270px;
+}
+#slider-section #slider {
+  height: 750px;
+  margin: 0 0 130px;
+}
+#slider-section #slider-phone {
+  left: -400px;
+  top: 100px;
+}
+#slider-section #smart-clock {
+  background: url(../images/sprite.png) -529px -371px;
+  position: absolute;
+  top: -350px;
+  right: -700px;
+  opacity: 0.6;
+  width: 621px;
+  height: 435px;
+  z-index: 2;
+}
+#slider-section #smart-clock.smart-clock-active {
+  right: -240px !important;
+}
+#slider-section #smart-clock.smart-clock-pos1 {
+  opacity: 1 !important;
+  top: 820px !important;
+  right: 240px !important;
+}
+#slider-section #smart-clock.smart-clock-pos2 {
+  opacity: 1 !important;
+  top: 1100px !important;
+  right: -650px !important;
+}
+#slider-section #smart-clock.smart-clock-pos3 {
+  opacity: 1 !important;
+  top: 1100px !important;
+  right: -700px !important;
+}
+
+/**
+ * Swiper 3.3.1
+ * Most modern mobile touch slider and framework with hardware accelerated transitions
+ * 
+ * http://www.idangero.us/swiper/
+ * 
+ * Copyright 2016, Vladimir Kharlampidi
+ * The iDangero.us
+ * http://www.idangero.us/
+ * 
+ * Licensed under MIT
+ * 
+ * Released on: February 7, 2016
+ */
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  /* Fix of Webkit flickering */
+  z-index: 1;
+}
+
+.swiper-container-no-flexbox .swiper-slide {
+  float: left;
+}
+
+.swiper-container-vertical > .swiper-wrapper {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.swiper-container-android .swiper-slide,
+.swiper-wrapper {
+  -webkit-transform: translate3d(0px, 0, 0);
+  -moz-transform: translate3d(0px, 0, 0);
+  -o-transform: translate(0px, 0px);
+  -ms-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0);
+}
+
+.swiper-container-multirow > .swiper-wrapper {
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.swiper-container-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+.swiper-slide {
+  -webkit-flex-shrink: 0;
+  -ms-flex: 0 0 auto;
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* Auto Height */
+.swiper-container-autoheight,
+.swiper-container-autoheight .swiper-slide {
+  height: auto;
+}
+
+.swiper-container-autoheight .swiper-wrapper {
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-transition-property: -webkit-transform, height;
+  -moz-transition-property: -moz-transform;
+  -o-transition-property: -o-transform;
+  -ms-transition-property: -ms-transform;
+  transition-property: transform, height;
+}
+
+/* a11y */
+.swiper-container .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+
+/* IE10 Windows Phone 8 Fixes */
+.swiper-wp8-horizontal {
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+.swiper-wp8-vertical {
+  -ms-touch-action: pan-x;
+  touch-action: pan-x;
+}
+
+/* Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  width: 27px;
+  height: 44px;
+  margin-top: -22px;
+  z-index: 10;
+  cursor: pointer;
+  -moz-background-size: 27px 44px;
+  -webkit-background-size: 27px 44px;
+  background-size: 27px 44px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  opacity: 0.35;
+  cursor: auto;
+  pointer-events: none;
+}
+
+.swiper-button-prev,
+.swiper-container-rtl .swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+  left: 10px;
+  right: auto;
+}
+
+.swiper-button-prev.swiper-button-black,
+.swiper-container-rtl .swiper-button-next.swiper-button-black {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-prev.swiper-button-white,
+.swiper-container-rtl .swiper-button-next.swiper-button-white {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M0%2C22L22%2C0l2.1%2C2.1L4.2%2C22l19.9%2C19.9L22%2C44L0%2C22L0%2C22L0%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-next,
+.swiper-container-rtl .swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23007aff'%2F%3E%3C%2Fsvg%3E");
+  right: 10px;
+  left: auto;
+}
+
+.swiper-button-next.swiper-button-black,
+.swiper-container-rtl .swiper-button-prev.swiper-button-black {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23000000'%2F%3E%3C%2Fsvg%3E");
+}
+
+.swiper-button-next.swiper-button-white,
+.swiper-container-rtl .swiper-button-prev.swiper-button-white {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2027%2044'%3E%3Cpath%20d%3D'M27%2C22L27%2C22L5%2C44l-2.1-2.1L22.8%2C22L2.9%2C2.1L5%2C0L27%2C22L27%2C22z'%20fill%3D'%23ffffff'%2F%3E%3C%2Fsvg%3E");
+}
+
+/* Pagination Styles */
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+.swiper-pagination.swiper-pagination-hidden {
+  opacity: 0;
+}
+
+/* Common Styles */
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+}
+
+/* Bullets */
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  border-radius: 100%;
+  background: #000;
+  opacity: 0.2;
+}
+
+button.swiper-pagination-bullet {
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  cursor: pointer;
+}
+
+.swiper-pagination-white .swiper-pagination-bullet {
+  background: #fff;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #007aff;
+}
+
+.swiper-pagination-white .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination-black .swiper-pagination-bullet-active {
+  background: #000;
+}
+
+.swiper-container-vertical > .swiper-pagination-bullets {
+  right: 10px;
+  top: 50%;
+  -webkit-transform: translate3d(0px, -50%, 0);
+  -moz-transform: translate3d(0px, -50%, 0);
+  -o-transform: translate(0px, -50%);
+  -ms-transform: translate3d(0px, -50%, 0);
+  transform: translate3d(0px, -50%, 0);
+}
+
+.swiper-container-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 5px 0;
+  display: block;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 5px;
+}
+
+/* Progress */
+.swiper-pagination-progress {
+  background: rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.swiper-pagination-progress .swiper-pagination-progressbar {
+  background: #007aff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: left top;
+  -moz-transform-origin: left top;
+  -ms-transform-origin: left top;
+  -o-transform-origin: left top;
+  transform-origin: left top;
+}
+
+.swiper-container-rtl .swiper-pagination-progress .swiper-pagination-progressbar {
+  -webkit-transform-origin: right top;
+  -moz-transform-origin: right top;
+  -ms-transform-origin: right top;
+  -o-transform-origin: right top;
+  transform-origin: right top;
+}
+
+.swiper-container-horizontal > .swiper-pagination-progress {
+  width: 100%;
+  height: 4px;
+  left: 0;
+  top: 0;
+}
+
+.swiper-container-vertical > .swiper-pagination-progress {
+  width: 4px;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.swiper-pagination-progress.swiper-pagination-white {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.swiper-pagination-progress.swiper-pagination-white .swiper-pagination-progressbar {
+  background: #fff;
+}
+
+.swiper-pagination-progress.swiper-pagination-black .swiper-pagination-progressbar {
+  background: #000;
+}
+
+/* 3D Container */
+.swiper-container-3d {
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  -o-perspective: 1200px;
+  perspective: 1200px;
+}
+
+.swiper-container-3d .swiper-wrapper,
+.swiper-container-3d .swiper-slide,
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top,
+.swiper-container-3d .swiper-slide-shadow-bottom,
+.swiper-container-3d .swiper-cube-shadow {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left,
+.swiper-container-3d .swiper-slide-shadow-right,
+.swiper-container-3d .swiper-slide-shadow-top,
+.swiper-container-3d .swiper-slide-shadow-bottom {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.swiper-container-3d .swiper-slide-shadow-left {
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
+  /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(right, rgba(0, 0, 0, 0.5), transparent);
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+.swiper-container-3d .swiper-slide-shadow-right {
+  background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
+  /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5), transparent);
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+.swiper-container-3d .swiper-slide-shadow-top {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+  /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 0.5), transparent);
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+.swiper-container-3d .swiper-slide-shadow-bottom {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(transparent));
+  /* Safari 4+, Chrome */
+  background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+  /* Chrome 10+, Safari 5.1+, iOS 5+ */
+  background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+  /* Firefox 3.6-15 */
+  background-image: -o-linear-gradient(top, rgba(0, 0, 0, 0.5), transparent);
+  /* Opera 11.10-12.00 */
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+  /* Firefox 16+, IE10, Opera 12.50+ */
+}
+
+/* Coverflow */
+.swiper-container-coverflow .swiper-wrapper,
+.swiper-container-flip .swiper-wrapper {
+  /* Windows 8 IE 10 fix */
+  -ms-perspective: 1200px;
+}
+
+/* Cube + Flip */
+.swiper-container-cube,
+.swiper-container-flip {
+  overflow: visible;
+}
+
+.swiper-container-cube .swiper-slide,
+.swiper-container-flip .swiper-slide {
+  pointer-events: none;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
+.swiper-container-cube .swiper-slide .swiper-slide,
+.swiper-container-flip .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-container-cube .swiper-slide-active,
+.swiper-container-flip .swiper-slide-active,
+.swiper-container-cube .swiper-slide-active .swiper-slide-active,
+.swiper-container-flip .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+.swiper-container-cube .swiper-slide-shadow-top,
+.swiper-container-flip .swiper-slide-shadow-top,
+.swiper-container-cube .swiper-slide-shadow-bottom,
+.swiper-container-flip .swiper-slide-shadow-bottom,
+.swiper-container-cube .swiper-slide-shadow-left,
+.swiper-container-flip .swiper-slide-shadow-left,
+.swiper-container-cube .swiper-slide-shadow-right,
+.swiper-container-flip .swiper-slide-shadow-right {
+  z-index: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Cube */
+.swiper-container-cube .swiper-slide {
+  visibility: hidden;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-container-cube.swiper-container-rtl .swiper-slide {
+  -webkit-transform-origin: 100% 0;
+  -moz-transform-origin: 100% 0;
+  -ms-transform-origin: 100% 0;
+  transform-origin: 100% 0;
+}
+
+.swiper-container-cube .swiper-slide-active,
+.swiper-container-cube .swiper-slide-next,
+.swiper-container-cube .swiper-slide-prev,
+.swiper-container-cube .swiper-slide-next + .swiper-slide {
+  pointer-events: auto;
+  visibility: visible;
+}
+
+.swiper-container-cube .swiper-cube-shadow {
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.6;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  z-index: 0;
+}
+
+/* Fade */
+.swiper-container-fade.swiper-container-free-mode .swiper-slide {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+
+.swiper-container-fade .swiper-slide {
+  pointer-events: none;
+  -webkit-transition-property: opacity;
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+.swiper-container-fade .swiper-slide .swiper-slide {
+  pointer-events: none;
+}
+
+.swiper-container-fade .swiper-slide-active,
+.swiper-container-fade .swiper-slide-active .swiper-slide-active {
+  pointer-events: auto;
+}
+
+/* Scrollbar */
+.swiper-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  -ms-touch-action: none;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.swiper-container-horizontal > .swiper-scrollbar {
+  position: absolute;
+  left: 1%;
+  bottom: 3px;
+  z-index: 50;
+  height: 5px;
+  width: 98%;
+}
+
+.swiper-container-vertical > .swiper-scrollbar {
+  position: absolute;
+  right: 3px;
+  top: 1%;
+  z-index: 50;
+  width: 5px;
+  height: 98%;
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+}
+
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+
+/* Preloader */
+.swiper-lazy-preloader {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -21px;
+  margin-top: -21px;
+  z-index: 10;
+  -webkit-transform-origin: 50%;
+  -moz-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+  -moz-animation: swiper-preloader-spin 1s steps(12, end) infinite;
+  animation: swiper-preloader-spin 1s steps(12, end) infinite;
+}
+
+.swiper-lazy-preloader:after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%236c6c6c'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+  background-position: 50%;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.swiper-lazy-preloader-white:after {
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg%20viewBox%3D'0%200%20120%20120'%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20xmlns%3Axlink%3D'http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink'%3E%3Cdefs%3E%3Cline%20id%3D'l'%20x1%3D'60'%20x2%3D'60'%20y1%3D'7'%20y2%3D'27'%20stroke%3D'%23fff'%20stroke-width%3D'11'%20stroke-linecap%3D'round'%2F%3E%3C%2Fdefs%3E%3Cg%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(30%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(60%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(90%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(120%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.27'%20transform%3D'rotate(150%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.37'%20transform%3D'rotate(180%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.46'%20transform%3D'rotate(210%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.56'%20transform%3D'rotate(240%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.66'%20transform%3D'rotate(270%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.75'%20transform%3D'rotate(300%2060%2C60)'%2F%3E%3Cuse%20xlink%3Ahref%3D'%23l'%20opacity%3D'.85'%20transform%3D'rotate(330%2060%2C60)'%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+}
+
+@-webkit-keyframes swiper-preloader-spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes swiper-preloader-spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 750px;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+  opacity: 0;
+}
+.swiper-container.visible-swiper {
+  opacity: 1;
+}
+.swiper-container .swiper-slide img {
+  max-height: 750px;
+}
+.swiper-container .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  margin: 0 25px !important;
+}
+.swiper-container .swiper-pagination-bullet-active {
+  background: #808082;
+}
+.swiper-container .swiper-button-prev, .swiper-container .swiper-button-next {
+  background-image: url(../images/sprite.png);
+  width: 32px;
+  height: 65px;
+  -webkit-background-size: auto;
+  -ms-background-size: auto;
+  background-size: auto;
+}
+.swiper-container .swiper-button-prev {
+  background-position: -1024px 0;
+}
+.swiper-container .swiper-button-next {
+  background-position: -1116px 0;
+}
+
+/* #gear-360-section
+----------------------------------------------------------------------------*/
+#gear-360-section {
+  padding: 100px 0 0;
+  position: relative;
+  height: 1290px;
+}
+#gear-360-section .img-box {
+  background-image: url(../images/bg-gear-360.jpg);
+  height: 721px;
+}
+#gear-360-section .img-box h1 {
+  color: #fff;
+  padding: 50px 0 21px;
+  margin: 0;
+}
+#gear-360-section #gear-360-phone {
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+  left: 1400px;
+  top: -120px;
+}
+#gear-360-section #phone-view02,
+#gear-360-section #phone-view03 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin: 0 0 0 -256px;
+  opacity: 0;
+  visibility: hidden;
+}
+#gear-360-section #phone-view02.visible,
+#gear-360-section #phone-view03.visible {
+  opacity: 1;
+  visibility: visible;
+}
+#gear-360-section #phone-view03 {
+  margin: 0 0 0 -340px;
+  bottom: -60px;
+}
+#gear-360-section #gear-360 {
+  position: absolute;
+  background: url(../images/sprite.png) 0 -441px;
+  width: 460px;
+  height: 366px;
+  top: 0;
+  left: -500px;
+}
+#gear-360-section #gear-360.gear-360-pos1 {
+  top: 155px !important;
+  left: 21px !important;
+}
+#gear-360-section #gear-360.gear-360-pos2 {
+  top: 730px !important;
+  left: 346px !important;
+  z-index: 2;
+}
+#gear-360-section #gear-360.gear-360-pos3 {
+  top: 920px !important;
+  left: -680px !important;
+  z-index: 2;
+}
+#gear-360-section #gear-360.gear-360-pos4 {
+  top: 960px !important;
+  left: -680px !important;
+  z-index: 2;
+}
+#gear-360-section #gear-360.gear-360-pos5 {
+  top: 960px !important;
+  left: -700px !important;
+  z-index: 2;
+}
+
+/* #gear-vr-section
+----------------------------------------------------------------------------*/
+#gear-vr-section {
+  padding: 80px 0 0;
+  height: 1183px;
+  position: relative;
+}
+#gear-vr-section .content-holder {
+  padding-top: 40px;
+}
+#gear-vr-section .img-box {
+  background-image: url(../images/bg-gear-vr.jpg);
+  height: 687px;
+  margin: 0 0 20px;
+  position: relative;
+}
+#gear-vr-section .link-photo-example {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 10px 0 35px;
+  display: inline-block;
+}
+#gear-vr-section .gear-vr {
+  position: absolute;
+  width: 763px;
+  height: 364px;
+  left: 50%;
+  bottom: 15px;
+  margin: 0 0 0 -381.5px;
+  z-index: 5;
+}
+
+#gear-vr-phone {
+  position: absolute;
+  left: 288px;
+  top: 349px;
+  opacity: 0;
+  visibility: hidden;
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+}
+
+/* #music-section
+----------------------------------------------------------------------------*/
+#music-section {
+  padding: 240px 0 0;
+  height: 1150px;
+  position: relative;
+  overflow: hidden;
+}
+#music-section .content-holder {
+  position: relative;
+  z-index: 6;
+}
+#music-section .level-text {
+  position: relative;
+  background-position: 0 -370px;
+  width: 509px;
+  height: 69px;
+  margin: 0 0 54px;
+  z-index: 5;
+}
+#music-section #headphones {
+  position: absolute;
+  width: 752px;
+  height: 825px;
+  background: url(../images/sprite.png) 0 -856px;
+  left: 50%;
+  top: -1100px;
+  margin: 0 0 0 -376px;
+}
+#music-section #headphones.headphones-pos1 {
+  top: 0 !important;
+}
+#music-section #headphones.headphones-pos2 {
+  top: 455px !important;
+}
+#music-section .headphones-part {
+  position: absolute;
+  width: 330px;
+  height: 672px;
+  right: 0;
+  bottom: 0;
+  background: url(../images/sprite.png) -820px -856px;
+  z-index: 3;
+}
+
+#music-phone {
+  position: absolute;
+  -o-transform: rotate(0) scale(1);
+  -ms-transform: rotate(0) scale(1);
+  -webkit-transform: rotate(0) scale(1);
+  -moz-transform: rotate(0) scale(1);
+  transform: rotate(0) scale(1);
+  left: 500px;
+  top: 460px;
+}
+
+/* #charger-section
+-----------------------------------------------------------------------------*/
+#charger-section {
+  height: 940px;
+  padding: 70px 0 250px;
+  position: relative;
+}
+#charger-section .charger {
+  position: absolute;
+  left: 50%;
+  bottom: 129px;
+  z-index: 1;
+  width: 525px;
+  height: 505px;
+  margin: 0 0 0 -217px;
+  background-position: 0 -1695px;
+}
+#charger-section .charger-final {
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  width: 621px;
+  height: 688px;
+  background-position: -528px -1695px;
+  z-index: 2;
+  -moz-transition-duration: 1.2s;
+  -o-transition-duration: 1.2s;
+  -webkit-transition-duration: 1.2s;
+  transition-duration: 1.2s;
+}
+#charger-section .charger-final.charger-final-active {
+  opacity: 1;
+  visibility: visible;
+}
+#charger-section .btn-holder {
+  padding: 25px 0 0;
+}

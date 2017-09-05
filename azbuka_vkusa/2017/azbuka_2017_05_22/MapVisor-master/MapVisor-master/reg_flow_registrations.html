@@ -1,0 +1,225 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>MapViser</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="">
+  <link href="css/style.css" media="screen, projection" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--[if gte IE 9]>
+    <style type="text/css">
+        #footer {filter: none;}
+    </style>
+    <![endif]-->
+</head>
+<body>
+    <div class="wrapper">
+        <header id="header">
+            <div class="logo-holder">
+                <h1 class="logo"><a href="#"><img src="images/logo.png" alt=""></a></h1>
+            </div><!--.logo-holder-->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#">Category</a></li>
+                </ul>
+            </nav><!--#nav-->
+            <div class="header-form">
+                <form action="#">
+                    <fieldset>
+                        <input class="search" type="submit" value="">
+                        <span class="icon-Icon-48"></span>
+                        <input type="text">
+                    </fieldset>
+                </form>
+                <a href="#">Sign up</a>
+                <a class="login-link" href="#">Log in</a>
+            </div><!--.header-form-->
+        </header><!--#header-->
+
+        <main class="content">
+            <nav class="content-nav">
+                <div class="w1170">
+                    <ul>
+                        <li>
+                            <a href="#"><span class="icon-ic_home_black_24px"></span></a>
+                        </li>
+                        <li>
+                            <a href="#">Registration</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav><!--.content-nav-->
+
+            <div class="w1170 content-holder">
+                <nav class="nav-tab">
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <em class="ico-holder"><span class="icon-ic_lock_black_24px3"></span></em>
+                                <span class="divider">&nbsp;</span>
+                                <em>1. Registration</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em class="ico-holder"><span class="icon-ic_face_black_24px3"></span></em>
+                                <span class="divider">&nbsp;</span>
+                                <em>2. Business Informations</em>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <em class="ico-holder"><span class="icon-ic_list_black_24px2"></span></em>
+                                <span class="divider">&nbsp;</span>
+                                <em>3. Category</em>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <article class="content-box tab-box">
+                    <h2 class="heading text-upper">Registration</h2>
+                    <div class="tab-content">
+                        <form action="#">
+                            <fieldset class="reg-content">
+                                <div class="attent-block yellow maxw1000">
+                                    <span class="icon-attent">
+                                        <span class="path1"></span><span class="path2"></span>
+                                    </span>
+                                    <span>Password is necessary for protection of your business listing. You may enter it later</span>
+                                </div><!--.attent-block-->
+                                <div class="column-holder">
+                                    <div class="col-50">
+                                        <div class="form-row mb30 radio-box">
+                                            <span class="text-medium col-50">Relationship to business:</span>
+                                            <div class="radio-row">
+                                                <input checked="checked" type="radio" value="" id="mr-rel" name="relation-bus">
+                                                <label for="mr-rel">Mr.</label>
+                                            </div>
+                                            <div class="radio-row">
+                                                <input type="radio" value="" id="mrs-rel" name="relation-bus">
+                                                <label for="mrs-rel">Mrs.</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row pl30 mb30">
+                                            <label for="user-name" class="label-icon"><span class="icon-ic_face_black_24px"></span></label>
+                                            <div class="input-required">
+                                                <input id="user-name" name="fname" type="text" required>
+                                                <span class="placeholder">Name</span>
+                                            </div>
+                                        </div>
+                                        <div class="form-row pl30 mb30">
+                                            <label for="user-surname" class="label-icon"><span class="icon-ic_face_black_24px"></span></label>
+                                            <input type="text" id="user-surname" placeholder="Surname">
+                                        </div>
+                                        <div class="form-row mb30">
+                                            <span class="text-medium col-50 fl">Business <br>Affiliation:</span>
+                                            <div class="select-holder fr">
+                                                <label class="select-custom w170">
+                                                    <select>
+                                                        <option value="I am an Owner">I am an Owner</option>
+                                                        <option value="I  am somebody else">I  am somebody else</option>
+                                                        <option value="I work for this business">I work for this business dfs fsd</option>
+                                                        <option value="I am a marketer">I am a marketer</option>
+                                                        <option value="I  am somebody else">I  am somebody else</option>
+                                                        <option value="I work for this business">I work for this business dfs fsd</option>
+                                                        <option value="I am a marketer">I am a marketer</option>
+                                                    </select>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div><!--.col-50-->
+                                    <div class="col-50">
+                                        <div class="form-row pl30 mb30 sucess-row">
+                                            <label for="login" class="label-icon"><span class="icon-ic_face_black_24px"></span></label>
+                                            <div class="input-required">
+                                                <input type="text" id="login" required>
+                                                <span class="placeholder">Login</span>
+                                            </div>
+                                            <span class="icon-ic_check_circle_black_24px2 icon-sucess"></span>
+                                        </div>
+                                        <div class="form-row pl30 mb30 error-row">
+                                            <label for="pass" class="label-icon"><span class="icon-ic_vpn_key_black_24px"></span></label>
+                                            <div class="input-required">
+                                                <input type="text" id="pass" required>
+                                                <span class="placeholder">Password</span>
+                                            </div>
+                                            <span class="icon-cancel icon-error"></span>
+                                            <span class="tooltip-box error">your password are not identical</span>
+                                        </div>
+                                        <div class="form-row pl30 mb30">
+                                            <label for="repeat-pass" class="label-icon"><span class="icon-ic_vpn_key_black_24px"></span></label>
+                                            <div class="input-required">
+                                                <input type="text" id="repeat-pass" required>
+                                                <span class="placeholder">Repeat password</span>
+                                            </div>
+                                            <a href="#" class="watch-pass"><span class="icon-ic_visibility_black_24px"></span></a>
+                                        </div>
+                                        <div class="form-row pl30 mb30">
+                                            <label for="email" class="label-icon"><span class="icon-ic_email_black_24px"></span></label>
+                                            <div class="input-required">
+                                                <input type="text" id="email" required>
+                                                <span class="placeholder">Email</span>
+                                            </div>
+                                        </div>
+                                        <div class="checkbox-row square">
+                                            <input type="checkbox" value="" id="terms" name="terms">
+                                            <label for="terms">I agree to the <a href="#">terms and conditions</a>.</label>
+                                        </div>
+                                    </div><!--.col-50-->
+                                </div><!--.column-holder-->
+                            </fieldset>
+                            <div class="text-center">
+                                <a href="#" class="btn">Next</a>
+                                <a href="#" class="btn">Skip</a>
+                            </div>
+                        </form>
+                    </div>
+                </article><!--.content-box-->
+            </div><!--.w1170-->
+
+        </main><!--#content -->
+        <a href="#" class="arrow-up"><span class="icon-ic_keyboard_arrow_up_black_24px"></span></a>
+    </div><!-- .wrapper -->
+
+    <footer id="footer">
+        <strong class="logo"><a href="#"><img src="images/logo-bottom.png" alt=""></a></strong>
+        <ul class="social-network-list">
+            <li>
+                <a href="#"><span class="icon-facebook-f"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-twitter"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-linkedin"></span></a>
+            </li>
+            <li>
+                <a href="#"><span class="icon-google-plus"></span></a>
+            </li>
+        </ul><!--.social-network-list-->
+        <nav id="footer-nav">
+            <ul>
+                <li><a href="#">How it works</a></li>
+                <li><a href="#">Profile Plans</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Location</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Privacy policy</a></li>
+                <li><a href="#">Contact MapViser</a></li>
+            </ul>
+        </nav><!--#footer-nav-->
+    </footer><!-- .footer -->
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jcf.js"></script>
+    <script src="js/jcf.angular.js"></script>
+    <script src="js/jcf.select.js"></script>
+    <script src="js/jcf.scrollable.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

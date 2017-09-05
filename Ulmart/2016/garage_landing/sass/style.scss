@@ -1,0 +1,314 @@
+/* import compass reset */
+@import "compass/reset.scss";
+/* import compass variables for css3 */
+@import "compass/css3";
+/* import fonts */
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic';
+/* sсss variables */
+$mainColor: #000;
+$orangeColor: #f15322;
+$grayColor: #848484;
+$fontSize:11px;
+/* webkit optimization */
+body {-webkit-text-size-adjust:100%;}
+input[type=submit],
+input[type=text],
+input[type=password],
+input[type=file],
+textarea{-webkit-appearance:none;}
+textarea,
+input[type=submit],
+input[type=text]{-webkit-border-radius:0;}
+input[type="image"]{
+  padding:0;
+  border:none;
+}
+.main {
+  height: auto !important;
+  min-height: 100%;
+}
+body {
+  font:$fontSize 'Roboto', Arial, Helvetica, sans-serif;
+  line-height:1.4;
+  margin:0;
+  background:#fff;
+  color:$mainColor;
+  min-width: 600px;
+}
+a {
+  color:$orangeColor;
+  text-decoration: none;
+}
+a:hover {text-decoration: underline;}
+img {
+  border: none;
+  max-width: 100%;
+}
+form,
+fieldset {
+  margin:0;
+  padding:0;
+  border-style:none;
+}
+input, textarea, select {
+  font:100% "Lucida Grande", arial, sans-serif;
+  vertical-align:middle;
+  color:#000;
+}
+label {vertical-align:middle;}
+input:focus {
+  outline:none;
+}
+strong {
+  font-weight: bold;
+}
+input[type="text"], input[type="email"], textarea {
+  &:focus, &:active {
+    @include box-shadow(inset 0 0 8px rgba(113, 117, 121, 0.7));
+  }
+}
+input,
+textarea,
+input[type="text"]:focus {
+  outline:none;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+  border: none;
+}
+
+img.full-width {
+  width:100%;
+  height: auto;
+  display: block;
+}
+.wrapper {
+  width: 600px;
+  min-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+.wrapper:after,
+.holder:after,
+.row:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+h1 {
+  font:400 29px 'Roboto', Arial, Helvetica, sans-serif;
+  margin:0 0 12px;
+  &.logo {
+    color: #fff;
+  }
+}
+h2 {
+  font:400 18px 'Roboto', Arial, Helvetica, sans-serif;
+  margin:0 0 10px;
+  text-align: center;
+}
+.text-mark {
+  color: $orangeColor;
+}
+.btn {
+  background: $orangeColor;
+  color: #fff;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  text-decoration: none;
+  font-size: $fontSize + 1px;
+  &:hover {
+    background: #d03f12;
+    text-decoration: none;
+  }
+}
+p {
+  margin:0 0 8px;
+}
+.gray {
+  color: $grayColor;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.small-text {
+  font-size: $fontSize - 1.6px;
+}
+#header {
+  color: #fff;
+  position: relative;
+  .logo {
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 20px;
+    text-transform: uppercase;
+    span {
+      display: inline-block;
+      background: $orangeColor;
+      padding:0 12px;
+    }
+  }
+  #nav {
+    font-size:$fontSize - 1px;
+    li {
+      position: absolute;
+      z-index:1;
+      &.filters {
+        top: 112px;
+        left: 43px;
+      }
+      &.svechi {
+        top: 144px;
+        left: 50px;
+      }
+      &.amortizatory {
+        top: 193px;
+        left: 6px;
+      }
+      &.stekloochistiteli {
+        top: 75px;
+        right: 31px;
+        text-align: right;
+      }
+      &.auto-light {
+        top: 133px;
+        right: 22px;
+        text-align: right;
+      }
+      &.diski {
+        top: 238px;
+        right: 59px;
+        text-align: right;
+      }
+      &.shiny {
+        top: 240px;
+        right: 294px;
+        text-align: right;
+      }
+      img, span {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      img {
+        margin:0 7px;
+      }
+    }
+    a {
+      color: #fff;
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+.novetly-section {
+  background: $orangeColor;
+  color: #fff;
+  padding: 10px 0;
+  h2 {
+    color: #fff;
+  }
+  ul a {
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+      span {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+ul.ico-list {
+  font-size: 0;
+  text-align: left;
+  li {
+    margin:0 25px 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size:$fontSize;
+    text-align: left;
+    span, img {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    img {
+      margin:0 15px 0 0;
+    }
+  }
+}
+.sale-section {
+  padding:19px 45px;
+  text-align: left;
+  h2 {
+    margin: 0;
+    text-align: left;
+    font-weight: 500;
+  }
+  ul {
+    padding:15px 0 0;
+    overflow: hidden;
+    li {
+      width: 50%;
+      float: right;
+      text-align: right;
+      &:first-child {
+        float: left;
+        text-align: left;
+      }
+      span, em {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      em {
+        background: $grayColor;
+        display: inline-block;
+        padding:0 15px;
+        height: 30px;
+        line-height: 30px;
+        margin:0 0 0 5px;
+      }
+    }
+  }
+}
+.details-box {
+  text-align: center;
+  margin:0 0 18px;
+  .holder {
+    background: #000;
+    height: 40px;
+    line-height: 40px;
+    font-size: $fontSize + 2.5px;
+    margin:0 0 3px;
+    a {
+      color: #fff;
+      text-decoration: underline;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+.fast-section {
+  padding:10px 0;
+}
+#footer {
+  background: #f1f1f1;
+  padding:12px 0 0;
+  h2 {
+    margin: 0;
+    padding:0 20px;
+  }
+}

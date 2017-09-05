@@ -1,0 +1,1 @@
+2017/02/15 12:27:16 [error] 7642#0: *3977 directory index of "/var/www/webroot/blog/" is forbidden, client: 40.77.167.46, server: blog.wim.agency.ru, request: "GET / HTTP/1.1", host: "blog.whatifmailing.ru"

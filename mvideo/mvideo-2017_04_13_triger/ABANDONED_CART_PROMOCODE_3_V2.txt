@@ -1,0 +1,372 @@
+ <html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+</head>
+<body>
+<form>
+<div style="background: #FFFFFF; color: #000000; font-family: Arial,Helvetica,sans-serif; font-size: 12px;">
+<table width="100%" bgcolor="#F5F5F5" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td width="640" align="center" style="width: 640px;" bgcolor="#F5F5F5">
+<table width="640" style="width: 100%; min-width: 300px; max-width: 640px;" bgcolor="#FFFFFF" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td align="center">
+<table width="94%" align="center" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; color: #FFFFFF; line-height: 1px; padding-top: 14px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 1px;">Вы забыли свои вещи в корзине</td>
+</tr>
+<tr>
+<td align="center" style="text-align: center; color: #000000; line-height: 28px; padding-bottom: 18px; font-family: Arial,Helvetica,sans-serif; font-size: 24px;"><a href="http://www.mvideo.ru/?reff=Action_mail_email_a_broshennaya_korzinaV3_a_head_logo&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_head_logo&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><img width="110" height="64" title="Перейти на сайт М.Видео" style="border: currentColor; border-image: none; width: 110px; height: 64px; vertical-align: top;" alt="Перейти на сайт М.Видео" src="http://static.mvideo.ru/emarsis/trigger_broshennaya_korzina/logo.gif"/></a></td>
+</tr>
+<tr>
+<td align="center" style="color: #333333; line-height: 24px; padding-bottom: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 19px;"><img width="600" title="" alt="" src="http://static.mvideo.ru/emarsis/trigger_broshennaya_korzina/banner-top3.jpg"/></td>
+</tr>
+<tr>
+<td align="center" style="text-align: center; color: #333333; line-height: 24px; padding-bottom: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 22px;">Здравствуйте!</td>
+</tr>
+<tr>
+<td align="center" style="text-align: center; color: #333333; line-height: 24px; padding-bottom: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 14px;">Рекомендуем Вам не откладывать оформление заказа, пока выбранные товары есть в наличии! В качестве приятного бонуса мы дарим скидку 500 рублей, которую можно применить при заказе на сайте общей стоимостью более 2000 рублей.</td>
+</tr>
+<tr>
+<td align="center" style="text-align: center; color: #333333; line-height: 21px; padding-bottom: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 20px; font-weight: bold;">Промокод: <input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_PROMOCODE" dir="ltr" value="Код промокода"/></td>
+</tr>
+<tr>
+<td align="center" style="text-align: center; color: #000000; line-height: 22px; padding-bottom: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 17px;"><a title="Перейти в корзину" style="border-radius: 4px; width: 220px; text-align: center; color: #FFFFFF; line-height: 45px; font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: bold; text-decoration: none; display: inline-block; background-color: #ED1C29;" href="http://www.mvideo.ru/cart?reff=Action_mail_email_a_broshennaya_korzinaV3_a_btn_to_bskt&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_btn_to_bskt&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank">Перейти в корзину</a></td>
+</tr>
+<tr>
+<td align="center" style="text-align: center; color: #333333; line-height: 24px; padding-bottom: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 14px;"><a style="color: #333333; text-decoration: underline;" href="http://www.mvideo.ru/pravila-promokod" target="_blank">Правила применения промокода на 500 рублей</a></td>
+</tr>
+<tr>
+<td align="center" style="text-align: center; color: #333333; line-height: 26px; padding-bottom: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 24px; font-weight: bold;">Забытые товары</td>
+</tr>
+<tr>
+<td style="text-align: center; font-size: 0px;">
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 20px; padding-bottom: 15px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 16px;"><a href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_SKU#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_img_zabitiy_tovar&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_img_zabitiy_tovar&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><img width="200" height="200" title="Изображение товара 1" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="Изображение товара 1" src="http://img.mvideo.ru/Pdb/small_pic/480/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_SKU#b.jpg"/></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="63" style="text-align: center; color: #000000; line-height: 21px; padding-top: 10px; padding-bottom: 10px; font-family: Arial,Helvetica,sans-serif; font-size: 17px; vertical-align: middle;"><a style="color: #000000; font-weight: bold; text-decoration: none;" href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_SKU#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_txt_zabitiy_tovar&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_txt_zabitiy_tovar&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_NAME" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 16px; font-weight: bold;" dir="ltr" value="Название товара 1"/></a></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 40px; padding-bottom: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold;"><span style="color: #000000; line-height: 40px; background-color: #FFF330;"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_PRICE" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 32px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; background-color: transparent;" dir="ltr" value="Цена товара корзины 1"/> рублей</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; font-size: 0px;">
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 20px; padding-bottom: 15px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 16px;"><a href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_SKU_2#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_img_zabitiy_tovar2&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_img_zabitiy_tovar2&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><img width="200" height="200" title="Изображение товара 2" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="Изображение товара 2" src="http://img.mvideo.ru/Pdb/small_pic/480/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_SKU_2#b.jpg"/></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="63" style="text-align: center; color: #000000; line-height: 21px; padding-top: 10px; padding-bottom: 10px; font-family: Arial,Helvetica,sans-serif; font-size: 17px; vertical-align: middle;"><a style="color: #000000; font-weight: bold; text-decoration: none;" href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_SKU_2#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_txt_zabitiy_tovar2&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_txt_zabitiy_tovar2&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_NAME_2" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 16px; font-weight: bold;" dir="ltr" value="Название товара 2"/></a></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 40px; padding-bottom: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold;"><span style="color: #000000; line-height: 40px; background-color: #FFF330;"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_PRICE_2" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 32px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; background-color: transparent;" dir="ltr" value="Цена товара корзины 2"/> рублей</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; font-size: 0px;">
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 20px; padding-bottom: 15px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 16px;"><a href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_SKU_3#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_img_zabitiy_tovar3&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_img_zabitiy_tovar3&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><img width="200" height="200" title="Изображение товара 3" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="Изображение товара 3" src="http://img.mvideo.ru/Pdb/small_pic/480/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_SKU_3#b.jpg"/></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="63" style="text-align: center; color: #000000; line-height: 21px; padding-top: 10px; padding-bottom: 10px; font-family: Arial,Helvetica,sans-serif; font-size: 17px; vertical-align: middle;"><a style="color: #000000; font-weight: bold; text-decoration: none;" href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_SKU_3#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_txt_zabitiy_tovar3&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_txt_zabitiy_tovar3&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_NAME_3" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 16px; font-weight: bold;" dir="ltr" value="Название товара 3"/></a></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 40px; padding-bottom: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold;"><span style="color: #000000; line-height: 40px; background-color: #FFF330;"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_MAINPROD_PRICE_3" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 32px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; background-color: transparent;" dir="ltr" value="Цена товара корзины 3"/> рублей</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td align="center" style="text-align: center; color: #000000; line-height: 22px; padding-bottom: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 17px;"><a title="Завершить оформление" style="border-radius: 4px; width: 280px; text-align: center; color: #FFFFFF; line-height: 45px; font-family: Arial,Helvetica,sans-serif; font-size: 20px; font-weight: bold; text-decoration: none; display: inline-block; background-color: #ED1C29;" href="http://www.mvideo.ru/cart?reff=Action_mail_email_a_broshennaya_korzinaV3_a_btn_to_bskt2&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_btn_to_bskt2&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank">Завершить оформление</a></td>
+</tr>
+<tr>
+<td align="center" style="text-align: center; color: #333333; line-height: 30px; padding-bottom: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 25px;"><strong>Вам также могут понравиться</strong></td>
+</tr>
+<tr>
+<td style="text-align: center; font-size: 0px;">
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 16px;"><a href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_1#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_img_recmoend_tovar&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_img_recmoend_tovar&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><img width="200" height="200" title="Изображение товара 1" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="Изображение товара 1" src="http://img.mvideo.ru/Pdb/small_pic/480/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_1#b.jpg"/></a></td>
+</tr>
+<tr>
+<td height="63" valign="center" style="text-align: center; color: #000000; line-height: 21px; padding-bottom: 8px; font-family: Arial,Helvetica,sans-serif; font-size: 15px;"><a style="color: #000000; font-weight: bold; text-decoration: none;" href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_1#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_txt_recmoend_tovar&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_txt_recmoend_tovar&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_NAME_1" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: bold;" dir="ltr" value="Может понравиться товар 1"/></a></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 40px; padding-bottom: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold;"><span style="color: #000000; line-height: 40px; background-color: #FFF330;"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_PRICE_1" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 32px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; background-color: transparent;" dir="ltr" value="Цена товара 1"/> рублей</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 16px;"><a href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_2#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_img_recmoend_tovar2&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_img_recmoend_tovar2&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><img width="200" height="200" title="Изображение товара 2" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="Изображение товара 2" src="http://img.mvideo.ru/Pdb/small_pic/480/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_2#b.jpg"/></a></td>
+</tr>
+<tr>
+<td height="63" valign="center" style="text-align: center; color: #000000; line-height: 21px; padding-bottom: 8px; font-family: Arial,Helvetica,sans-serif; font-size: 15px;"><a style="color: #000000; font-weight: bold; text-decoration: none;" href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_2#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_txt_recmoend_tovar2&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_txt_recmoend_tovar2&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_NAME_2" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: bold;" dir="ltr" value="Может понравиться товар 2"/></a></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 40px; padding-bottom: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold;"><span style="color: #000000; line-height: 40px; background-color: #FFF330;"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_PRICE_2" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 32px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; background-color: transparent;" dir="ltr" value="Цена товара 2"/> рублей</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; font-size: 0px;">
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 16px;"><a href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_3#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_img_recmoend_tovar3&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_img_recmoend_tovar3&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><img width="200" height="200" title="Изображение товара 3" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="Изображение товара 3" src="http://img.mvideo.ru/Pdb/small_pic/480/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_3#b.jpg"/></a></td>
+</tr>
+<tr>
+<td height="63" valign="center" style="text-align: center; color: #000000; line-height: 21px; padding-bottom: 8px; font-family: Arial,Helvetica,sans-serif; font-size: 15px;"><a style="color: #000000; font-weight: bold; text-decoration: none;" href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_3#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_txt_recmoend_tovar3&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_txt_recmoend_tovar3&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_NAME_3" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: bold;" dir="ltr" value="Может понравиться товар 3"/></a></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 40px; padding-bottom: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold;"><span style="color: #000000; line-height: 40px; background-color: #FFF330;"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_PRICE_3" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 32px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; background-color: transparent;" dir="ltr" value="Цена товара 3"/> рублей</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 16px;"><a href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_4#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_img_recmoend_tovar4&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_img_recmoend_tovar4&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><img width="200" height="200" title="Изображение товара 4" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="Изображение товара 4" src="http://img.mvideo.ru/Pdb/small_pic/480/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_4#b.jpg"/></a></td>
+</tr>
+<tr>
+<td height="63" valign="center" style="text-align: center; color: #000000; line-height: 21px; padding-bottom: 8px; font-family: Arial,Helvetica,sans-serif; font-size: 15px;"><a style="color: #000000; font-weight: bold; text-decoration: none;" href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_4#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_txt_recmoend_tovar4&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_txt_recmoend_tovar4&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_NAME_4" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: bold;" dir="ltr" value="Может понравиться товар 4"/></a></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 40px; padding-bottom: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold;"><span style="color: #000000; line-height: 40px; background-color: #FFF330;"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_PRICE_4" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 32px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; background-color: transparent;" dir="ltr" value="Цена товара 4"/> рублей</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td style="text-align: center; font-size: 0px;">
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 16px;"><a href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_5#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_img_recmoend_tovar5&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_img_recmoend_tovar5&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><img width="200" height="200" title="Изображение товара 5" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="Изображение товара 5" src="http://img.mvideo.ru/Pdb/small_pic/480/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_5#b.jpg"/></a></td>
+</tr>
+<tr>
+<td height="63" valign="center" style="text-align: center; color: #000000; line-height: 21px; padding-bottom: 8px; font-family: Arial,Helvetica,sans-serif; font-size: 15px;"><a style="color: #000000; font-weight: bold; text-decoration: none;" href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_5#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_txt_recmoend_tovar5&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_txt_recmoend_tovar5&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_NAME_5" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: bold;" dir="ltr" value="Может понравиться товар 5"/></a></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 40px; padding-bottom: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold;"><span style="color: #000000; line-height: 40px; background-color: #FFF330;"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_PRICE_5" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 32px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; background-color: transparent;" dir="ltr" value="Цена товара 5"/> рублей</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 300px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 16px;"><a href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_6#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_img_recmoend_tovar6&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_img_recmoend_tovar6&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><img width="200" height="200" title="Изображение товара 6" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="Изображение товара 6" src="http://img.mvideo.ru/Pdb/small_pic/480/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_6#b.jpg"/></a></td>
+</tr>
+<tr>
+<td height="63" valign="center" style="text-align: center; color: #000000; line-height: 21px; padding-bottom: 8px; font-family: Arial,Helvetica,sans-serif; font-size: 15px;"><a style="color: #000000; font-weight: bold; text-decoration: none;" href="http://www.mvideo.ru/products/%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_SKU_6#?reff=Action_mail_email_a_broshennaya_korzinaV3_a_txt_recmoend_tovar6&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_txt_recmoend_tovar6&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_NAME_6" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 20px; font-family: Arial,Helvetica,sans-serif; font-size: 15px; font-weight: bold;" dir="ltr" value="Может понравиться товар 6"/></a></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 40px; padding-bottom: 35px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold;"><span style="color: #000000; line-height: 40px; background-color: #FFF330;"><input id="%SAP_ZMKT_S_PERS_ATTR_LV-ZZMKT_ALTPROD_PRICE_6" style="border: currentColor; border-image: none; width: 100%; text-align: center; color: #000000; line-height: 32px; font-family: Arial, Helvetica, sans-serif; font-size: 24px; font-weight: bold; background-color: transparent;" dir="ltr" value="Цена товара 6"/> рублей</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+<tr>
+<td align="center" style="text-align: center; color: #333333; line-height: 30px; padding-bottom: 20px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 25px;"><strong>Выгода при покупках онлайн</strong></td>
+</tr>
+<tr>
+<td style="text-align: center; font-size: 0px;">
+<div style="width: 150px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="68" style="text-align: center; color: #000000; line-height: 21px; padding-bottom: 8px; font-family: Arial,Helvetica,sans-serif; font-size: 17px;"><img width="71" height="45" title="" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="" src="http://static.mvideo.ru/emarsis/trigger_broshennaya_korzina/img-5-prcnt.jpg"/></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 14px; padding-bottom: 35px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 13px;">Скидка 5% при оплате<br/>
+картой оналайн</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 150px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="68" style="text-align: center; color: #000000; line-height: 21px; padding-bottom: 8px; font-family: Arial,Helvetica,sans-serif; font-size: 17px;"><img width="68" height="68" title="" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="" src="http://static.mvideo.ru/emarsis/trigger_broshennaya_korzina/img-psnt.jpg"/></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 14px; padding-bottom: 35px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 13px;">Получайте бонусы за покупки</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 150px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="68" style="text-align: center; color: #000000; line-height: 21px; padding-bottom: 8px; font-family: Arial,Helvetica,sans-serif; font-size: 17px;"><img width="74" height="65" title="" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="" src="http://static.mvideo.ru/emarsis/trigger_broshennaya_korzina/img-return.jpg"/></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 14px; padding-bottom: 35px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 13px;">30 дней обмен<br/>
+и возврат</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 150px; vertical-align: top; display: inline-block;">
+<table width="100%" align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td height="68" style="text-align: center; color: #000000; line-height: 21px; padding-bottom: 8px; font-family: Arial,Helvetica,sans-serif; font-size: 17px;"><img width="82" height="65" title="" style="border: currentColor; border-image: none; vertical-align: top; display: inline-block;" alt="" src="http://static.mvideo.ru/emarsis/trigger_broshennaya_korzina/img-dlvr.jpg"/></td>
+</tr>
+<tr>
+<td style="text-align: center; color: #000000; line-height: 14px; padding-bottom: 35px; font-family: Tahoma,Arial,Helvetica,sans-serif; font-size: 13px;">Доставка вовремя</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td align="center" bgcolor="#DFDFDF">
+<table width="94%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="color: #333333; line-height: 20px; padding-bottom: 15px; font-family: Arial,sans-serif; font-size: 13px; font-weight: normal; text-decoration: none;"><br/>
+<font color="#333333" face="Arial, sans-serif" style="color: #333333; line-height: 20px; font-family: Arial,sans-serif; font-size: 13px; font-weight: normal; text-decoration: none;">Вы можете <a title="" style="text-decoration: none;" href="http://contact.mvideo.ru/u/un.php?par=$uid$_$cid$_$llid$_$sid$" target="_blank"><font color="#A3A0A0" face="Arial, sans-serif" style="color: #A3A0A0; line-height: normal; font-family: Arial,sans-serif; font-size: 13px; font-weight: normal; text-decoration: underline;">отписаться</font></a> и не получать информацию об акциях, распродажах и спецпредложениях.</font><br/>
+<font color="#333333" face="Arial, sans-serif" style="color: #333333; line-height: 20px; font-family: Arial,sans-serif; font-size: 13px; font-weight: normal; text-decoration: none;">Данное сообщение отправлено автоматически и не требует ответа.</font><br/>
+<font color="#333333" face="Arial, sans-serif" style="color: #333333; line-height: 20px; font-family: Arial,sans-serif; font-size: 13px; font-weight: normal; text-decoration: none;">Чтобы регулярно и без проблем получать рассылку от «М.Видео», пожалуйста, добавьте адрес <a title="" style="text-decoration: none;" href="mailto:m.video@sender.mvideo.ru" target="_blank"><font color="#A3A0A0" face="Arial, sans-serif" style="color: #A3A0A0; line-height: normal; font-family: Arial,sans-serif; font-size: 13px; font-weight: normal; text-decoration: underline;">m.video@sender.mvideo.ru</font></a> в свою адресную книгу.</font><br/>
+<font color="#333333" face="Arial, sans-serif" style="color: #333333; line-height: 20px; font-family: Arial,sans-serif; font-size: 13px; font-weight: normal; text-decoration: none;">Цены и скидки на товары действительны на момент отправки данного письма.</font></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td height="1" style="line-height: 0; font-size: 0px;" bgcolor="#AAAAAA"/>
+</tr>
+<tr>
+<td align="center" bgcolor="#DFDFDF">
+<table width="94%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="color: #333333; line-height: 18px; padding-bottom: 25px; font-family: Arial,sans-serif; font-size: 13px; font-weight: normal; text-decoration: none;"><br/>
+<br/>
+<font color="#333333" face="Arial, sans-serif" style="color: #333333; line-height: 18px; font-family: Arial,sans-serif; font-size: 13px; font-weight: normal; text-decoration: none;">ООО «М.видео Менеджмент», ОГРН 1057746840095.<br/>
+Юридический адрес: 105066, Россия, Москва, ул. Нижняя Красносельская, дом 40/12, корп. 20.</font></td>
+</tr>
+<tr>
+<td style="text-align: center; padding-bottom: 10px; font-size: 0px;">
+<div style="width: 50%; vertical-align: top; display: inline-block; min-width: 228px;">
+<table align="left" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding-bottom: 15px;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="color: #333333; line-height: 16px; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px;"><img width="49" height="49" style="border: currentColor; border-image: none; display: block;" alt="" src="http://static.mvideo.ru/emarsis/trigger_broshennaya_korzina/footer_logo_mvideo.jpg"/></td>
+<td width="2" style="line-height: 0; font-size: 0px;"/>
+<td style="color: #333333; line-height: 16px; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 13px;"><span style="white-space: nowrap;">Copyright © М.Видео, 2017</span></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width: 50%; vertical-align: top; display: inline-block; min-width: 266px;">
+<table align="right" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="padding-bottom: 15px;">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td style="color: #333333; line-height: 16px; padding-right: 5px; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px;"><a title="Политика конфиденциальности" style="color: #A3A0A0; text-decoration: underline; white-space: nowrap;" href="http://www.mvideo.ru/legalcontent?reff=Action_mail_email_a_broshennaya_korzinaV3_a_foot_links&amp;utm_source=Action_mail&amp;utm_medium=email&amp;utm_campaign=a_broshennaya_korzinaV3&amp;utm_content=a_foot_links&amp;userId=%SAP_ZMKT_S_PERS_ATTR_LV-ZZ_WEBID#" target="_blank">Политика конфиденциальности</a></td>
+<td style="color: #333333; line-height: 16px; font-family: Verdana,Arial,Helvetica,sans-serif; font-size: 12px;"><img width="51" height="48" style="border: currentColor; border-image: none; display: block;" alt="" src="http://static.mvideo.ru/emarsis/trigger_broshennaya_korzina/footer_logo_akit.jpg"/></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+</body>
+</html>

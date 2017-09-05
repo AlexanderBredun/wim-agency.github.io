@@ -1,0 +1,324 @@
+$(document).ready(function(event){
+
+    // page nav
+    function getTopElement(elem){
+        var top = $(elem).offset().top - ($(window).height() - ($(elem).height()/2));
+        return top;
+    };
+
+    function pageNavItemActive(index){
+        $('.nav .header__link').removeClass('active');
+        $('.nav .header__link:eq('+index+')').addClass('active');
+    }
+
+    $(window).scroll(function(){
+        if ($('section.first')[0]) {
+            if ($(window).scrollTop() > getTopElement('section.first')){
+                 $('section.first').find('.onload-hidden').addClass('show-content')
+                pageNavItemActive(0);
+            };
+        }
+        if ($('section.second')[0]) {
+            if ($(window).scrollTop() > getTopElement('section.second')){
+                 $('section.second').find('.onload-hidden').addClass('show-content')
+                pageNavItemActive(1);
+            };
+        }
+        if ($('section.fourth')[0]) {
+            if ($(window).scrollTop() > getTopElement('section.fourth')){
+                 $('section.third').find('.onload-hidden').addClass('show-content')
+                 $('section.fourth').find('.onload-hidden').addClass('show-content')
+                pageNavItemActive(2);
+            };
+        }
+        if ($('section.seventh')[0]) {
+            if ($(window).scrollTop() > getTopElement('section.seventh')){
+                 $('section.seventh').find('.onload-hidden').addClass('show-content')
+                pageNavItemActive(3);
+            };
+        }
+    });
+
+    //Cart calc
+    $(".calculator .btn").click(function(){
+        $('.calculation').slideDown("slow");
+    });
+
+    $('[data-href]').on('click', function(event){
+        var tId = $(this).attr('data-href');
+        $('html, body').animate({scrollTop: $(tId).offset().top - 120 + 'px'}, 1000);
+        event.preventDefault();
+        $('.navbar-collapse').removeClass('in');
+    });
+
+    $('[data-href-cart]').on('click', function(event){
+        var tId = $(this).attr('data-href-cart');
+        $('html, body').animate({scrollTop: $(tId).offset().top + 'px'}, 1000);
+        event.preventDefault();
+    });   
+
+    //Scroll to hash id
+    function scrollToElement(el, ms, margin) {
+        var speed = (ms) ? ms : 600;
+        var margin = (margin) ? margin : 0;
+        
+        $('html,body').animate({
+            scrollTop: $(el).offset().top - margin
+        }, speed);
+    }
+    var type = window.location.search.replace('?','');
+    var scroll_to_calc_margin = 50;
+    if (type) {
+       setTimeout(function(){
+           scrollToElement('#' + type, 1000, scroll_to_calc_margin);
+       }, 1000);
+    }
+
+    //Run validator
+    var validator = new Validator();
+
+    //Tabs
+    $(".vacancy__tabs dt").click(function(){
+        $(this).toggleClass("active");
+        $(this).next("dd").slideToggle("slow");
+    });
+    
+    //Hide phone smartphone
+    $(window).scroll(function(){
+        if ($('body').scrollTop() > 100) {
+            $('.phone.xs, .home.xs').hide()
+        } else if ($('body').outerWidth() > 550) {
+            $('.phone.xs, .home.xs').hide()
+        } else {
+            $('.phone.xs, .home.xs').show()
+        }
+    });
+
+    //Popup close
+    $('.overlay-form').click(function() {
+        $(this).hide();
+        $('.thanks-popup, .subscribe-popup').fadeOut(1000);
+    })
+
+    //Phone input
+    $("#phone, .indicator").keydown(function(event) {
+        if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27 || 
+            (event.keyCode == 65 && event.ctrlKey === true) || 
+            (event.keyCode >= 35 && event.keyCode <= 39)) {
+                 return;
+        }
+        else {
+            if ((event.keyCode < 48 || event.keyCode > 57) && (event.keyCode < 96 || event.keyCode > 105 )) {
+                event.preventDefault(); 
+            }   
+        }
+    });
+
+    //Indicator input
+    $('.indicator').on('keyup', function(){
+        $(this).val($(this).val().replace (/\D/, ''));
+    });
+  
+
+    //Select vacancy
+    if (location.hash == '#email-marketing' ) {
+        window.onload = function myd() {
+            document.getElementById('email-marketing').click();
+        }
+    } else if (location.hash == '#web-designer') {
+        window.onload = function myd() {
+            document.getElementById('web-designer').click();
+        }
+    }
+    $(".vacancy__tabs dt").click(function(){  
+        var url = '#' + $(this).attr('id');
+        if(url != window.location){
+            window.history.pushState(null, null, url);
+        }
+    });
+
+})
+
+
+//Yandex map
+if ($('#map')[0]) {
+    var wimMap;
+    ymaps.ready(init);
+
+    function init () {
+        wimMap = new ymaps.Map('map', {
+            center: [55.74627639, 37.63959401],
+            zoom: 16,
+            controls: []
+        });
+        myPlacemark = new ymaps.Placemark([55.7456, 37.638782], {
+            // balloonContentHeader: "Балун метки",
+            // balloonContentBody: "Содержимое <em>балуна</em> метки",
+            // balloonContentFooter: "Подвал",
+            // hintContent: "Хинт метки"
+        });
+        wimMap.geoObjects.add(myPlacemark);
+        wimMap.behaviors.disable('scrollZoom');
+        wimMap.behaviors.disable('drag');
+    }
+}
+
+//Valid form
+function Validator() {
+    var valid;
+
+    function formValidation() {
+        valid = true;
+        
+        $('.required').each(function(){
+            if (!$(this).val().length) {
+                validationError($(this));
+            } else {
+                switch ($(this).attr('name')) {
+                    case 'phone': {
+                        var val = $(this).val();
+                        if (val.length < 11 || val.match(/[^0-9]/)) {
+                            validationError($(this));
+                        }
+                        break;
+                    }
+                    case 'email': {
+                        var exp = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                        if (!exp.test($(this).val())) {
+                            validationError($(this));
+                        }
+                        break;
+                    }
+                }
+            }
+        })
+
+        if (valid) formSubmit();
+    }
+
+    function formSubmit() {
+        $.ajax({
+            url: "/service/wim/send.php",
+            type: "POST",
+            data: {
+                    company: $('input[name=company]').val(),
+                    name: $('input[name=name]').val(),
+                    company_url: $('input[name=company_url]').val(),
+                    phone: $('input[name=phone]').val(),
+                    email: $('input[name=email]').val()
+            },
+            dataType: "JSON",
+            error: function() {
+                console.error('Ошибка при отправке данных на сервер');
+            }
+        });
+
+        $('.overlay-form').show();
+        $('.thanks-popup').fadeIn();
+        $('.form')[0].reset();
+        $('.required:focus').blur();
+    }
+
+    function validationError($el) {
+        valid = false;
+        $el.parent().addClass('error');
+    }
+
+    $('.form__btn').on('click', function(event){
+        event.preventDefault();
+        formValidation();
+    })
+
+    $('.required').on('focus', function(){
+        if ($(this).parent().hasClass('error')) $(this).parent().removeClass('error');
+    })
+
+    $('.thanks-popup').on('click', function(event){
+        if ($(event.target).hasClass('thanks-popup') || $(event.target).hasClass('closed')) 
+            $(this).fadeOut();
+            $('.overlay-form').hide();
+    })
+
+    $('body').on('keyup', function(event) {
+        if (event.keyCode === 13) {
+            if ($('.required:focus').length)  {
+                $('.form__btn').click();
+            }
+        }
+        if (event.keyCode === 27) {
+            if ($('.thanks-popup:visible').length) {
+                $('.thanks-popup').fadeOut();
+                $('.overlay-form').hide();
+            }
+
+        }
+    })
+}
+
+    $('#subscribe__btn').click(function(){
+       $('.error-input').hide();
+       
+       $('#subscribe__email').css('border-color', '#000000');
+       var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+       
+       var email = $('#subscribe__email').val();
+
+       if (!re.test(email) || email.length < 1) {
+           $('.error-input').show();
+           $('#subscribe__email').css('border-color', '#FF6666');
+           return false;
+       }
+        $('.subscribe-popup').on('click', function(event){
+            if ($(event.target).hasClass('subscribe-popup') || $(event.target).hasClass('closed')) 
+                $(this).fadeOut();
+                $('.overlay-form').hide();
+        })
+
+        if (event.keyCode === 27) {
+            if ($('.subscribe-popup:visible').length) {
+                $('.subscribe-popup').fadeOut();
+                $('.overlay-form').hide();
+            }
+
+        }
+     
+
+       
+       subscribe(email);      
+   });
+
+function subscribe(email) {
+        
+        $.ajax({
+        url: "import_email.php",
+        type: "POST",
+        data: { subscribe__email: email },
+        dataType: "JSON",
+        success: function (jsonStr) {
+            console.error(jsonStr);
+            
+            
+            if (jsonStr == null) {
+                alert('Данные не могут быть отправлены');
+                return false;
+            }
+          
+
+            var hideDuration = 800;
+            
+            $('.overlay-form').show();
+            $('.subscribe-popup').fadeIn();
+            $('.subscribe')[0].reset();
+            $('.subscribe__input:focus').blur();
+
+            $("#form_subscribe_feedback").delay(2*hideDuration).show();
+
+            return true;
+
+        },
+        error: function(){
+            alert('Данные не могут быть отправлены');
+        }
+
+    });
+}

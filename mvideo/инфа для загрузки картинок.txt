@@ -1,0 +1,15 @@
+Host: atg-web01-prod.corp.mvideo.ru
+User: emarsis
+Password: hGdf1l0j5l
+
+Файлы писать в корень. Загруженные картинки доступны будут по http приблизительно через 5 минут после загрузки.  Например, загруженная картинка с именем file01.jpg будет доступна по адресу:
+
+http://static.mvideo.ru/emarsis/
+
+
+MVPN.MVIDEO.RU
+    Твоя учетка:
+    corp\emarsis_osipov ORV84cqx
+
+
+новая ссылка для отписки http://contact.mvideo.ru/u/un.php?par=$uid$_$cid$_$llid$_$sid$
